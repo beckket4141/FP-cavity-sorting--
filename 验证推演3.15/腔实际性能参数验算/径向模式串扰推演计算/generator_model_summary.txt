@@ -1,0 +1,57 @@
+Generator-to-FP model summary
+
+Model assumptions:
+  Reference cavity waist: w0 = 1 (mapped to 0.88 mm for aperture and pixel scales).
+  Effective aperture radius: 2.45 mm = 2.784 w0.
+  Effective pixel pitch: 8.00 um = 0.0091 w0.
+  Misalignment scan (w0 units): 0.00,0.08,0.16
+  Representative shift for plots: 0.08 w0.
+
+bolduc:
+  same_w0:
+    l=0: retained=100.00%, target=99.36%, p0|retained=99.36%, dominant_p=0
+    l=1: retained=100.00%, target=98.73%, p0|retained=98.73%, dominant_p=0
+    l=2: retained=100.00%, target=98.09%, p0|retained=98.09%, dominant_p=0
+    l=3: retained=99.98%, target=97.44%, p0|retained=97.45%, dominant_p=0
+    l=4: retained=99.93%, target=96.72%, p0|retained=96.79%, dominant_p=0
+    l=5: retained=99.78%, target=95.82%, p0|retained=96.03%, dominant_p=0
+    l=6: retained=99.40%, target=94.50%, p0|retained=95.07%, dominant_p=0
+    l=7: retained=98.56%, target=92.36%, p0|retained=93.70%, dominant_p=0
+    l=8: retained=96.96%, target=88.85%, p0|retained=91.63%, dominant_p=0
+  scaled_w0:
+    l=0: retained=100.00%, target=99.36%, p0|retained=99.36%, dominant_p=0
+    l=1: retained=100.00%, target=77.67%, p0|retained=77.67%, dominant_p=0
+    l=2: retained=100.00%, target=40.99%, p0|retained=40.99%, dominant_p=0
+    l=3: retained=100.00%, target=16.10%, p0|retained=16.10%, dominant_p=1
+    l=4: retained=100.00%, target=5.02%, p0|retained=5.02%, dominant_p=3
+    l=5: retained=100.00%, target=1.29%, p0|retained=1.29%, dominant_p=4
+    l=6: retained=100.00%, target=0.28%, p0|retained=0.28%, dominant_p=7
+    l=7: retained=100.00%, target=0.05%, p0|retained=0.05%, dominant_p=8
+    l=8: retained=100.00%, target=0.01%, p0|retained=0.01%, dominant_p=8
+
+yang_phase_only:
+  same_w0:
+    l=0: retained=100.00%, target=99.36%, p0|retained=99.36%, dominant_p=0
+    l=1: retained=100.00%, target=77.29%, p0|retained=77.29%, dominant_p=0
+    l=2: retained=100.00%, target=48.73%, p0|retained=48.73%, dominant_p=0
+    l=3: retained=100.00%, target=28.43%, p0|retained=28.43%, dominant_p=0
+    l=4: retained=100.00%, target=15.93%, p0|retained=15.93%, dominant_p=0
+    l=5: retained=100.00%, target=8.71%, p0|retained=8.71%, dominant_p=1
+    l=6: retained=100.00%, target=4.69%, p0|retained=4.69%, dominant_p=1
+    l=7: retained=100.00%, target=2.49%, p0|retained=2.49%, dominant_p=2
+    l=8: retained=100.00%, target=1.31%, p0|retained=1.31%, dominant_p=3
+  scaled_w0:
+    l=0: retained=100.00%, target=99.36%, p0|retained=99.36%, dominant_p=0
+    l=1: retained=100.00%, target=77.29%, p0|retained=90.73%, dominant_p=0
+    l=2: retained=100.00%, target=48.73%, p0|retained=79.64%, dominant_p=0
+    l=3: retained=100.00%, target=28.43%, p0|retained=69.64%, dominant_p=0
+    l=4: retained=100.00%, target=15.93%, p0|retained=60.75%, dominant_p=0
+    l=5: retained=100.00%, target=8.71%, p0|retained=52.75%, dominant_p=0
+    l=6: retained=100.00%, target=4.69%, p0|retained=45.47%, dominant_p=0
+    l=7: retained=100.00%, target=2.49%, p0|retained=38.82%, dominant_p=0
+    l=8: retained=100.00%, target=1.31%, p0|retained=32.75%, dominant_p=0
+
+Interpretation:
+  1. For complex-amplitude generation, same w0 keeps the field close to the cavity LG_{0}^{l} family; scaled w0 destroys the target overlap.
+  2. For phase-only generation, the Yang/Sroor scaling improves the best-fit LG p=0 content when one changes the decomposition scale, even though the real cavity target basis is unchanged.
+  3. Phase-only best-fit purity and FP-cavity q matching are therefore not the same statement.

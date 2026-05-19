@@ -1,0 +1,44 @@
+Theory vs experiment matrix comparison summary
+
+theory_csv = D:\自制软件\thesis\验证推演3.15\tau到性能指标的重新推演\theory_probability_matrix.csv
+aggregate_xlsx = D:\自制软件\thesis\数据内容\对比度数据\最终数据\triplicate_full9_aggregate.xlsx
+aggregate_sheet = combined_percentage
+
+[aggregate]
+matrix_MAE_pp = 0.439688
+diag_MAE_pp = 1.417337
+offdiag_MAE_pp = 0.317481
+top1_match = 7/9
+top2_match = 8/9
+
+[run_1]
+matrix_MAE_pp = 0.408471
+diag_MAE_pp = 1.128499
+offdiag_MAE_pp = 0.318468
+top1_match = 6/9
+top2_match = 8/9
+
+[run_2]
+matrix_MAE_pp = 0.540246
+diag_MAE_pp = 1.533082
+offdiag_MAE_pp = 0.416142
+top1_match = 6/9
+top2_match = 6/9
+
+[run_3]
+matrix_MAE_pp = 0.518048
+diag_MAE_pp = 1.810310
+offdiag_MAE_pp = 0.356515
+top1_match = 8/9
+top2_match = 8/9
+
+Aggregate diagonal comparison (theory_pct vs experiment_pct):
+  l=0: 94.513995% vs 94.089869%
+  l=1: 94.477858% vs 94.881770%
+  l=2: 94.473170% vs 94.762733%
+  l=3: 94.484614% vs 93.785639%
+  l=4: 94.784368% vs 92.881491%
+  l=5: 94.484614% vs 92.716705%
+  l=6: 94.473170% vs 92.177563%
+  l=7: 94.477858% vs 91.573556%
+  l=8: 94.513995% vs 92.445237%

@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-03-28T17:10:30",
+  "data_root": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据",
+  "fsr_fixed_hz": 9947000000.0,
+  "fixed_finesse": 32.21,
+  "global_fit": {
+    "best_global_finesse": 31.168892206561896,
+    "best_global_raw_relative_residual": 0.014122165048275927,
+    "fixed_finesse": 32.21,
+    "fixed_f_raw_relative_residual": 0.014260707905592777
+  },
+  "runs": [
+    {
+      "run": "1",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\1\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2203147750829396,
+        0.44158587112320297,
+        0.6599982360447874,
+        0.8869823753267316,
+        0.1072958368289434,
+        0.32856561358324116,
+        0.5498379732519855,
+        0.7687284738551825
+      ],
+      "peak_transmittance_ratio": [
+        0.9226100151745067,
+        0.9144062688366484,
+        0.89396100808369,
+        0.8668384879725086,
+        0.8572411420708634,
+        0.839385017991495,
+        0.8142857142857143,
+        0.7996794871794872,
+        0.7991658646134103
+      ],
+      "fixed_f_metrics": {
+        "finesse": 32.21,
+        "raw_relative_residual": 0.011836788125280318,
+        "worst_column_relative_residual": 0.0597708810763621,
+        "mean_column_norm_l2": 0.017102485338095774,
+        "max_column_norm_l2": 0.04909825214346024,
+        "mean_column_cosine": 0.9997240672664378,
+        "min_column_cosine": 0.9982121226349412,
+        "alpha_min_w": 6.797464230588998e-06,
+        "alpha_max_w": 8.029658203208358e-06
+      },
+      "best_f_metrics": {
+        "finesse": 31.659635953349348,
+        "raw_relative_residual": 0.011790351514256735,
+        "worst_column_relative_residual": 0.06057622472497389,
+        "mean_column_norm_l2": 0.016705647579933633,
+        "max_column_norm_l2": 0.05099088337868405,
+        "mean_column_cosine": 0.9997229857280536,
+        "min_column_cosine": 0.9981635742693025,
+        "alpha_min_w": 6.795205008619772e-06,
+        "alpha_max_w": 8.025790485180861e-06
+      },
+      "counterfactuals_fixed_f": {
+        "migrated_raw_relative_residual": 0.011836788125280318,
+        "target_column_raw_relative_residual": 0.033722466502506133,
+        "diagonal_only_raw_relative_residual": 0.016686147130572617
+      },
+      "x_comparison_fixed_f": {
+        "mean_abs_percentage_point_diff": 0.3226956598953671,
+        "max_abs_percentage_point_diff": 1.9221137909220976,
+        "observed_diag_share_mean_percent": 93.45963246581715,
+        "predicted_diag_share_mean_percent": 94.08927676183114,
+        "observed_er_sum_mean_db": 11.575678735976163,
+        "predicted_er_sum_mean_db": 12.02859345761411,
+        "mean_abs_er_sum_diff_db": 0.4529147216379443,
+        "max_abs_er_sum_diff_db": 1.3637388492257259
+      }
+    },
+    {
+      "run": "2",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\2\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2231759890859053,
+        0.443493324859254,
+        0.6638132213544284,
+        0.8898435893296974,
+        0.10920330738539258,
+        0.3333343368792098,
+        0.5522223043819745,
+        0.7715896878581482
+      ],
+      "peak_transmittance_ratio": [
+        0.9366197183098591,
+        0.9268069533394327,
+        0.915492957746479,
+        0.899486191393706,
+        0.8965882041787886,
+        0.8774436090225565,
+        0.8723457406944791,
+        0.8504413619167718,
+        0.840576171875
+      ],
+      "fixed_f_metrics": {
+        "finesse": 32.21,
+        "raw_relative_residual": 0.01783916556592483,
+        "worst_column_relative_residual": 0.06373326850645285,
+        "mean_column_norm_l2": 0.025975162325555166,
+        "max_column_norm_l2": 0.05031171951359939,
+        "mean_column_cosine": 0.9995092676028605,
+        "min_column_cosine": 0.9979669686344756,
+        "alpha_min_w": 8.01292173912868e-06,
+        "alpha_max_w": 1.0893190889701026e-05
+      },
+      "best_f_metrics": {
+        "finesse": 31.777305224828083,
+        "raw_relative_residual": 0.017819794579349395,
+        "worst_column_relative_residual": 0.06422529634309605,
+        "mean_column_norm_l2": 0.025769606140016083,
+        "max_column_norm_l2": 0.051272910257590315,
+        "mean_column_cosine": 0.9995123775692417,
+        "min_column_cosine": 0.997935424418655,
+        "alpha_min_w": 8.012848409692014e-06,
+        "alpha_max_w": 1.089287364126119e-05
+      },
+      "counterfactuals_fixed_f": {
+        "migrated_raw_relative_residual": 0.01783916556592483,
+        "target_column_raw_relative_residual": 0.036461363826658315,
+        "diagonal_only_raw_relative_residual": 0.021858910957069648
+      },
+      "x_comparison_fixed_f": {
+        "mean_abs_percentage_point_diff": 0.4199256852965435,
+        "max_abs_percentage_point_diff": 1.8786312001240937,
+        "observed_diag_share_mean_percent": 93.34641069846268,
+        "predicted_diag_share_mean_percent": 94.10097813100658,
+        "observed_er_sum_mean_db": 11.516556183899938,
+        "predicted_er_sum_mean_db": 12.03208703599687,
+        "mean_abs_er_sum_diff_db": 0.6059413004032285,
+        "max_abs_er_sum_diff_db": 1.1755489709734483
+      }
+    },
+    {
+      "run": "3",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\3\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2231759890859053,
+        0.443493324859254,
+        0.6638132213544284,
+        0.8898435893296974,
+        0.10920330738539258,
+        0.3304730729993968,
+        0.5526991872549513,
+        0.7715896878581482
+      ],
+      "peak_transmittance_ratio": [
+        0.9275534441805224,
+        0.9085794655414908,
+        0.9055291102160381,
+        0.8982655103402268,
+        0.9041586339851281,
+        0.8794575590155701,
+        0.8676470588235294,
+        0.8292978208232445,
+        0.8414510400811771
+      ],
+      "fixed_f_metrics": {
+        "finesse": 32.21,
+        "raw_relative_residual": 0.012087918797561287,
+        "worst_column_relative_residual": 0.042581973909141424,
+        "mean_column_norm_l2": 0.02266607552292186,
+        "max_column_norm_l2": 0.04240648653561497,
+        "mean_column_cosine": 0.9997426753201943,
+        "min_column_cosine": 0.9990929764030979,
+        "alpha_min_w": 8.833670017757117e-06,
+        "alpha_max_w": 1.1155775395573598e-05
+      },
+      "best_f_metrics": {
+        "finesse": 30.34439408009341,
+        "raw_relative_residual": 0.011559757621210115,
+        "worst_column_relative_residual": 0.040005514541733636,
+        "mean_column_norm_l2": 0.018175890201862357,
+        "max_column_norm_l2": 0.03260756704607899,
+        "mean_column_cosine": 0.9997721140870465,
+        "min_column_cosine": 0.9991994589701554,
+        "alpha_min_w": 8.819077473358422e-06,
+        "alpha_max_w": 1.1154328848850908e-05
+      },
+      "counterfactuals_fixed_f": {
+        "migrated_raw_relative_residual": 0.012087918797561287,
+        "target_column_raw_relative_residual": 0.03411297700767931,
+        "diagonal_only_raw_relative_residual": 0.0183966976599347
+      },
+      "x_comparison_fixed_f": {
+        "mean_abs_percentage_point_diff": 0.43658848275171436,
+        "max_abs_percentage_point_diff": 2.3180407225840693,
+        "observed_diag_share_mean_percent": 92.76749797634193,
+        "predicted_diag_share_mean_percent": 94.09987428996025,
+        "observed_er_sum_mean_db": 11.123404844841115,
+        "predicted_er_sum_mean_db": 12.031379553261852,
+        "mean_abs_er_sum_diff_db": 0.9079747084207361,
+        "max_abs_er_sum_diff_db": 1.5004991580799825
+      }
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "generated_at": "2026-03-28T16:31:34",
+  "script": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\My_nju_thesis-master\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\标定方法解释--查漏补缺\\q1_verify_per_lock_model.py",
+  "data_root": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\My_nju_thesis-master\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据",
+  "final_dir": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\My_nju_thesis-master\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据",
+  "axes": {
+    "channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "locks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "shape_interpretation": {
+      "single_lock_column": "9x1",
+      "all_locks_matrix": "9x9"
+    }
+  },
+  "runs": {
+    "1": {
+      "row_labels": [
+        "ch=0",
+        "ch=1",
+        "ch=2",
+        "ch=3",
+        "ch=4",
+        "ch=5",
+        "ch=6",
+        "ch=7",
+        "ch=8"
+      ],
+      "column_labels": [
+        "lock=0",
+        "lock=1",
+        "lock=2",
+        "lock=3",
+        "lock=4",
+        "lock=5",
+        "lock=6",
+        "lock=7",
+        "lock=8"
+      ],
+      "global_rel_l2_residual": 0.005421811917170556,
+      "max_lock_rel_l2_residual": 0.03943950248199664,
+      "worst_lock": 8,
+      "per_lock": [
+        {
+          "lock": 0,
+          "rel_l2_residual": 2.006377307904474e-05,
+          "abs_l2_residual_W": 1.62846025302344e-11,
+          "max_abs_residual_W": 1.454912596369462e-11,
+          "diag_share_percent": 94.5222075089029,
+          "x_diag_uW": 7.15047770577206,
+          "y_diag_uW": 0.8113594680851063,
+          "er_sum_db": 12.36928279411371,
+          "er_max_db": 17.18788168659006
+        },
+        {
+          "lock": 1,
+          "rel_l2_residual": 0.0011855039412932557,
+          "abs_l2_residual_W": 1.5147983146306018e-09,
+          "max_abs_residual_W": 1.5130401676106116e-09,
+          "diag_share_percent": 94.38582707539443,
+          "x_diag_uW": 6.440216039223626,
+          "y_diag_uW": 1.277656596774194,
+          "er_sum_db": 12.256210003704293,
+          "er_max_db": 16.693534974466647
+        },
+        {
+          "lock": 2,
+          "rel_l2_residual": 0.002485857547221836,
+          "abs_l2_residual_W": 2.7789300505771802e-09,
+          "max_abs_residual_W": 2.778260029540752e-09,
+          "diag_share_percent": 94.22211705423784,
+          "x_diag_uW": 6.334558816412178,
+          "y_diag_uW": 1.117751867924528,
+          "er_sum_db": 12.123841188534703,
+          "er_max_db": 17.07188538269846
+        },
+        {
+          "lock": 3,
+          "rel_l2_residual": 0.0037165580636229806,
+          "abs_l2_residual_W": 3.504824128938982e-09,
+          "max_abs_residual_W": 3.502818995068337e-09,
+          "diag_share_percent": 93.38424771213224,
+          "x_diag_uW": 6.240506516061687,
+          "y_diag_uW": 0.9428059901511681,
+          "er_sum_db": 11.496943888735977,
+          "er_max_db": 14.854817753407916
+        },
+        {
+          "lock": 4,
+          "rel_l2_residual": 0.006128930440756623,
+          "abs_l2_residual_W": 4.9604539260356944e-09,
+          "max_abs_residual_W": 4.954890673332368e-09,
+          "diag_share_percent": 92.44157336864765,
+          "x_diag_uW": 6.759647739467329,
+          "y_diag_uW": 0.808770382,
+          "er_sum_db": 10.874359268306446,
+          "er_max_db": 15.35426469419075
+        },
+        {
+          "lock": 5,
+          "rel_l2_residual": 0.006302945054585331,
+          "abs_l2_residual_W": 3.7087441888800223e-09,
+          "max_abs_residual_W": 3.704848539621949e-09,
+          "diag_share_percent": 93.23826798702217,
+          "x_diag_uW": 6.2880151828528765,
+          "y_diag_uW": 0.587164023442714,
+          "er_sum_db": 11.395362429583248,
+          "er_max_db": 16.47560668891401
+        },
+        {
+          "lock": 6,
+          "rel_l2_residual": 0.006468544227132283,
+          "abs_l2_residual_W": 2.727651216853577e-09,
+          "max_abs_residual_W": 2.7274501305174624e-09,
+          "diag_share_percent": 93.09395294448922,
+          "x_diag_uW": 5.8433697832725535,
+          "y_diag_uW": 0.4195952907378337,
+          "er_sum_db": 11.296919384947442,
+          "er_max_db": 16.03516014821694
+        },
+        {
+          "lock": 7,
+          "rel_l2_residual": 4.378412177909613e-05,
+          "abs_l2_residual_W": 1.3146891625832214e-11,
+          "max_abs_residual_W": 1.213579673483422e-11,
+          "diag_share_percent": 92.8134462084859,
+          "x_diag_uW": 5.430487381993856,
+          "y_diag_uW": 0.2982484851723619,
+          "er_sum_db": 11.110902179072223,
+          "er_max_db": 16.059921296762422
+        },
+        {
+          "lock": 8,
+          "rel_l2_residual": 0.03943950248199664,
+          "abs_l2_residual_W": 1.0067870158395362e-08,
+          "max_abs_residual_W": 1.0058132108927528e-08,
+          "diag_share_percent": 93.03505233304192,
+          "x_diag_uW": 6.417460699380624,
+          "y_diag_uW": 0.2531919121951219,
+          "er_sum_db": 11.25728748678746,
+          "er_max_db": 16.34480062430199
+        }
+      ]
+    },
+    "2": {
+      "row_labels": [
+        "ch=0",
+        "ch=1",
+        "ch=2",
+        "ch=3",
+        "ch=4",
+        "ch=5",
+        "ch=6",
+        "ch=7",
+        "ch=8"
+      ],
+      "column_labels": [
+        "lock=0",
+        "lock=1",
+        "lock=2",
+        "lock=3",
+        "lock=4",
+        "lock=5",
+        "lock=6",
+        "lock=7",
+        "lock=8"
+      ],
+      "global_rel_l2_residual": 0.008004765919920153,
+      "max_lock_rel_l2_residual": 0.04196221071363144,
+      "worst_lock": 8,
+      "per_lock": [
+        {
+          "lock": 0,
+          "rel_l2_residual": 5.0932372681105946e-05,
+          "abs_l2_residual_W": 5.6904597714517446e-11,
+          "max_abs_residual_W": 4.621020507506082e-11,
+          "diag_share_percent": 94.2303165380326,
+          "x_diag_uW": 10.20436904509192,
+          "y_diag_uW": 1.116912107692308,
+          "er_sum_db": 12.130386625799964,
+          "er_max_db": 18.15288104872717
+        },
+        {
+          "lock": 1,
+          "rel_l2_residual": 0.0012850002801716004,
+          "abs_l2_residual_W": 1.9801882303802985e-09,
+          "max_abs_residual_W": 1.979173627045238e-09,
+          "diag_share_percent": 94.62127561676942,
+          "x_diag_uW": 8.01089717892565,
+          "y_diag_uW": 1.540864521739131,
+          "er_sum_db": 12.453095078814043,
+          "er_max_db": 17.202134022415756
+        },
+        {
+          "lock": 2,
+          "rel_l2_residual": 0.0025179774626078386,
+          "abs_l2_residual_W": 3.2205527816125427e-09,
+          "max_abs_residual_W": 3.0635878522094254e-09,
+          "diag_share_percent": 94.53655099457693,
+          "x_diag_uW": 7.336621947261175,
+          "y_diag_uW": 1.27889462745098,
+          "er_sum_db": 12.381328599329493,
+          "er_max_db": 17.15244610241269
+        },
+        {
+          "lock": 3,
+          "rel_l2_residual": 0.004239892099853445,
+          "abs_l2_residual_W": 4.610016172212306e-09,
+          "max_abs_residual_W": 4.606459706271794e-09,
+          "diag_share_percent": 93.89037490489716,
+          "x_diag_uW": 7.4328869833147895,
+          "y_diag_uW": 1.0869088363636359,
+          "er_sum_db": 11.866065117540298,
+          "er_max_db": 16.86932455452694
+        },
+        {
+          "lock": 4,
+          "rel_l2_residual": 0.015545527932422304,
+          "abs_l2_residual_W": 1.497173045946508e-08,
+          "max_abs_residual_W": 1.4181153905430066e-08,
+          "diag_share_percent": 93.23180349586869,
+          "x_diag_uW": 8.4770744729935,
+          "y_diag_uW": 0.9623556979166666,
+          "er_sum_db": 11.390911261035978,
+          "er_max_db": 15.916484310011338
+        },
+        {
+          "lock": 5,
+          "rel_l2_residual": 0.012734742153125573,
+          "abs_l2_residual_W": 9.055317333535979e-09,
+          "max_abs_residual_W": 8.316030615805158e-09,
+          "diag_share_percent": 93.02534608708139,
+          "x_diag_uW": 7.8555456184741175,
+          "y_diag_uW": 0.7092549818181818,
+          "er_sum_db": 11.250786319330963,
+          "er_max_db": 15.552159408960161
+        },
+        {
+          "lock": 6,
+          "rel_l2_residual": 0.006455328666110893,
+          "abs_l2_residual_W": 3.447264725030332e-09,
+          "max_abs_residual_W": 2.967127218802923e-09,
+          "diag_share_percent": 92.08772140581425,
+          "x_diag_uW": 7.43540121068489,
+          "y_diag_uW": 0.530898219736842,
+          "er_sum_db": 10.659001565113078,
+          "er_max_db": 15.551594119579434
+        },
+        {
+          "lock": 7,
+          "rel_l2_residual": 0.00038419182557205135,
+          "abs_l2_residual_W": 1.4987565594151707e-10,
+          "max_abs_residual_W": 1.485168369494309e-10,
+          "diag_share_percent": 91.92192819701889,
+          "x_diag_uW": 7.025556892508042,
+          "y_diag_uW": 0.3869707820512821,
+          "er_sum_db": 10.561114166048139,
+          "er_max_db": 15.611900136287268
+        },
+        {
+          "lock": 8,
+          "rel_l2_residual": 0.04196221071363144,
+          "abs_l2_residual_W": 1.362821118588446e-08,
+          "max_abs_residual_W": 1.3608053722699301e-08,
+          "diag_share_percent": 92.57237904610477,
+          "x_diag_uW": 8.304179240396248,
+          "y_diag_uW": 0.3219795875,
+          "er_sum_db": 10.95631692208748,
+          "er_max_db": 16.40428189651559
+        }
+      ]
+    },
+    "3": {
+      "row_labels": [
+        "ch=0",
+        "ch=1",
+        "ch=2",
+        "ch=3",
+        "ch=4",
+        "ch=5",
+        "ch=6",
+        "ch=7",
+        "ch=8"
+      ],
+      "column_labels": [
+        "lock=0",
+        "lock=1",
+        "lock=2",
+        "lock=3",
+        "lock=4",
+        "lock=5",
+        "lock=6",
+        "lock=7",
+        "lock=8"
+      ],
+      "global_rel_l2_residual": 0.0028011501927900405,
+      "max_lock_rel_l2_residual": 0.008288036308343745,
+      "worst_lock": 8,
+      "per_lock": [
+        {
+          "lock": 0,
+          "rel_l2_residual": 1.6267094787372482e-05,
+          "abs_l2_residual_W": 1.802068860825445e-11,
+          "max_abs_residual_W": 1.7069853633006385e-11,
+          "diag_share_percent": 93.45169220233782,
+          "x_diag_uW": 10.3473760968494,
+          "y_diag_uW": 1.10716592,
+          "er_sum_db": 11.544580850293887,
+          "er_max_db": 17.020563776639026
+        },
+        {
+          "lock": 1,
+          "rel_l2_residual": 0.001243043980824803,
+          "abs_l2_residual_W": 2.3201264236887587e-09,
+          "max_abs_residual_W": 2.3198315753320492e-09,
+          "diag_share_percent": 94.22575497132432,
+          "x_diag_uW": 9.621879033545826,
+          "y_diag_uW": 1.8663135199999998,
+          "er_sum_db": 12.12674416746471,
+          "er_max_db": 17.34331239561046
+        },
+        {
+          "lock": 2,
+          "rel_l2_residual": 0.0019988180409975255,
+          "abs_l2_residual_W": 3.0464455644361155e-09,
+          "max_abs_residual_W": 3.045735173179503e-09,
+          "diag_share_percent": 94.09724997413628,
+          "x_diag_uW": 8.6909345818225,
+          "y_diag_uW": 1.523830047619048,
+          "er_sum_db": 12.0252253942238,
+          "er_max_db": 17.49985270997226
+        },
+        {
+          "lock": 3,
+          "rel_l2_residual": 0.003721563796077082,
+          "abs_l2_residual_W": 4.497593083742628e-09,
+          "max_abs_residual_W": 4.495604523731661e-09,
+          "diag_share_percent": 93.19784784371753,
+          "x_diag_uW": 8.258627145495078,
+          "y_diag_uW": 1.208173678571429,
+          "er_sum_db": 11.367595412234357,
+          "er_max_db": 16.29632189668832
+        },
+        {
+          "lock": 4,
+          "rel_l2_residual": 0.005080262605259338,
+          "abs_l2_residual_W": 5.004249244372553e-09,
+          "max_abs_residual_W": 4.999564456749749e-09,
+          "diag_share_percent": 92.97114503349214,
+          "x_diag_uW": 8.804873055743862,
+          "y_diag_uW": 0.9843312535714286,
+          "er_sum_db": 11.21463597596151,
+          "er_max_db": 16.07421755977715
+        },
+        {
+          "lock": 5,
+          "rel_l2_residual": 0.004205527341384301,
+          "abs_l2_residual_W": 3.0848318583488917e-09,
+          "max_abs_residual_W": 3.084191064436724e-09,
+          "diag_share_percent": 91.88957763612918,
+          "x_diag_uW": 8.189741719014515,
+          "y_diag_uW": 0.7315943619999999,
+          "er_sum_db": 10.542227839124276,
+          "er_max_db": 15.508533462068604
+        },
+        {
+          "lock": 6,
+          "rel_l2_residual": 0.005313096201773802,
+          "abs_l2_residual_W": 2.8537070624007385e-09,
+          "max_abs_residual_W": 2.8535195740560068e-09,
+          "diag_share_percent": 91.54653225479804,
+          "x_diag_uW": 7.729034973663512,
+          "y_diag_uW": 0.5340632445945945,
+          "er_sum_db": 10.346069981357747,
+          "er_max_db": 15.673617546615704
+        },
+        {
+          "lock": 7,
+          "rel_l2_residual": 5.443218583107948e-05,
+          "abs_l2_residual_W": 2.1443368071130064e-11,
+          "max_abs_residual_W": 1.7096612411755368e-11,
+          "diag_share_percent": 91.49399682984377,
+          "x_diag_uW": 7.570914622608664,
+          "y_diag_uW": 0.3909981896907217,
+          "er_sum_db": 10.31667059520234,
+          "er_max_db": 15.887599172065347
+        },
+        {
+          "lock": 8,
+          "rel_l2_residual": 0.008288036308343745,
+          "abs_l2_residual_W": 2.221819524372651e-09,
+          "max_abs_residual_W": 2.2216898726133262e-09,
+          "diag_share_percent": 92.03368504129821,
+          "x_diag_uW": 7.40781686880831,
+          "y_diag_uW": 0.2649585121951219,
+          "er_sum_db": 10.626893387707417,
+          "er_max_db": 15.774627970348527
+        }
+      ]
+    }
+  },
+  "aggregate_checks": {
+    "percentage_sheet_max_abs_diff_percent": {
+      "1": 0.0023790753944297194,
+      "2": 0.0007839048971618467,
+      "3": 0.003579829843772586
+    },
+    "combined_percentage_max_abs_diff_percent": 0.0012820784495062298,
+    "combined_deembedded_uW_max_abs_diff_uW": 4.98174488071379e-07,
+    "er_summary_consistency": {
+      "max_abs_diff_ER_sum_dB": 5.329070518200751e-15,
+      "max_abs_diff_ER_max_dB": 3.552713678800501e-15,
+      "max_abs_diff_signal_share_percent": 0.0,
+      "per_lock": [
+        {
+          "lock": 0,
+          "recomputed_ER_sum_mean_dB": 12.014750090069185,
+          "aggregate_ER_sum_mean_dB": 12.01475009006919,
+          "abs_diff_ER_sum_dB": 5.329070518200751e-15,
+          "recomputed_ER_max_mean_dB": 17.453775503985415,
+          "aggregate_ER_max_mean_dB": 17.45377550398542,
+          "abs_diff_ER_max_dB": 3.552713678800501e-15,
+          "recomputed_signal_share_mean_percent": 94.06807208309111,
+          "aggregate_signal_share_mean_percent": 94.06807208309111,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 1,
+          "recomputed_ER_sum_mean_dB": 12.27868308332768,
+          "aggregate_ER_sum_mean_dB": 12.27868308332768,
+          "abs_diff_ER_sum_dB": 0.0,
+          "recomputed_ER_max_mean_dB": 17.079660464164288,
+          "aggregate_ER_max_mean_dB": 17.07966046416429,
+          "abs_diff_ER_max_dB": 3.552713678800501e-15,
+          "recomputed_signal_share_mean_percent": 94.41095255449605,
+          "aggregate_signal_share_mean_percent": 94.41095255449605,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 2,
+          "recomputed_ER_sum_mean_dB": 12.176798394029333,
+          "aggregate_ER_sum_mean_dB": 12.17679839402933,
+          "abs_diff_ER_sum_dB": 3.552713678800501e-15,
+          "recomputed_ER_max_mean_dB": 17.24139473169447,
+          "aggregate_ER_max_mean_dB": 17.24139473169447,
+          "abs_diff_ER_max_dB": 0.0,
+          "recomputed_signal_share_mean_percent": 94.28530600765036,
+          "aggregate_signal_share_mean_percent": 94.28530600765036,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 3,
+          "recomputed_ER_sum_mean_dB": 11.576868139503544,
+          "aggregate_ER_sum_mean_dB": 11.57686813950354,
+          "abs_diff_ER_sum_dB": 3.552713678800501e-15,
+          "recomputed_ER_max_mean_dB": 16.006821401541057,
+          "aggregate_ER_max_mean_dB": 16.00682140154106,
+          "abs_diff_ER_max_dB": 3.552713678800501e-15,
+          "recomputed_signal_share_mean_percent": 93.49082348691563,
+          "aggregate_signal_share_mean_percent": 93.49082348691563,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 4,
+          "recomputed_ER_sum_mean_dB": 11.15996883510131,
+          "aggregate_ER_sum_mean_dB": 11.15996883510131,
+          "abs_diff_ER_sum_dB": 0.0,
+          "recomputed_ER_max_mean_dB": 15.781655521326414,
+          "aggregate_ER_max_mean_dB": 15.78165552132641,
+          "abs_diff_ER_max_dB": 3.552713678800501e-15,
+          "recomputed_signal_share_mean_percent": 92.88150729933616,
+          "aggregate_signal_share_mean_percent": 92.88150729933616,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 5,
+          "recomputed_ER_sum_mean_dB": 11.062792196012829,
+          "aggregate_ER_sum_mean_dB": 11.06279219601283,
+          "abs_diff_ER_sum_dB": 1.7763568394002505e-15,
+          "recomputed_ER_max_mean_dB": 15.845433186647591,
+          "aggregate_ER_max_mean_dB": 15.84543318664759,
+          "abs_diff_ER_max_dB": 1.7763568394002505e-15,
+          "recomputed_signal_share_mean_percent": 92.71773057007758,
+          "aggregate_signal_share_mean_percent": 92.71773057007758,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 6,
+          "recomputed_ER_sum_mean_dB": 10.767330310472756,
+          "aggregate_ER_sum_mean_dB": 10.76733031047276,
+          "abs_diff_ER_sum_dB": 3.552713678800501e-15,
+          "recomputed_ER_max_mean_dB": 15.753457271470692,
+          "aggregate_ER_max_mean_dB": 15.75345727147069,
+          "abs_diff_ER_max_dB": 1.7763568394002505e-15,
+          "recomputed_signal_share_mean_percent": 92.24273553503383,
+          "aggregate_signal_share_mean_percent": 92.24273553503383,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 7,
+          "recomputed_ER_sum_mean_dB": 10.662895646774233,
+          "aggregate_ER_sum_mean_dB": 10.66289564677423,
+          "abs_diff_ER_sum_dB": 3.552713678800501e-15,
+          "recomputed_ER_max_mean_dB": 15.853140201705012,
+          "aggregate_ER_max_mean_dB": 15.85314020170501,
+          "abs_diff_ER_max_dB": 1.7763568394002505e-15,
+          "recomputed_signal_share_mean_percent": 92.07645707844951,
+          "aggregate_signal_share_mean_percent": 92.07645707844951,
+          "abs_diff_signal_share_percent": 0.0
+        },
+        {
+          "lock": 8,
+          "recomputed_ER_sum_mean_dB": 10.946832598860786,
+          "aggregate_ER_sum_mean_dB": 10.94683259886079,
+          "abs_diff_ER_sum_dB": 5.329070518200751e-15,
+          "recomputed_ER_max_mean_dB": 16.174570163722034,
+          "aggregate_ER_max_mean_dB": 16.17457016372203,
+          "abs_diff_ER_max_dB": 3.552713678800501e-15,
+          "recomputed_signal_share_mean_percent": 92.54703880681495,
+          "aggregate_signal_share_mean_percent": 92.54703880681495,
+          "abs_diff_signal_share_percent": 0.0
+        }
+      ]
+    }
+  }
+}

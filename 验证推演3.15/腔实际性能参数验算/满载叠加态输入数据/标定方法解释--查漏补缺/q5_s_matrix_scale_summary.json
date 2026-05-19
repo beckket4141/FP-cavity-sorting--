@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-03-28T19:13:46",
+  "data_root": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据",
+  "mean_matrix_summary": {
+    "diag_range_percent": [
+      3.7927265924900326,
+      19.489237037506047
+    ],
+    "offdiag_median_percent": 0.0019368808501137541,
+    "offdiag_max_percent": 0.1671367901350563,
+    "column_offdiag_sum_range_percent": [
+      0.04947798548309845,
+      0.3186009463687217
+    ],
+    "target_share_range_percent": [
+      92.3832194315285,
+      99.55209565030071
+    ]
+  },
+  "pooled_runs_summary": {
+    "diag_range_percent": [
+      3.5748453739111135,
+      19.83829055169235
+    ],
+    "offdiag_median_percent": 0.001985099276175877,
+    "offdiag_max_percent": 0.20972647458611668,
+    "column_offdiag_sum_range_percent": [
+      0.03025505264164785,
+      0.3876520176254658
+    ],
+    "target_share_range_percent": [
+      91.05329656602795,
+      99.73406719634423
+    ]
+  },
+  "runs": [
+    {
+      "run": "1",
+      "diag_range_percent": [
+        3.936938074492585,
+        19.83829055169235
+      ],
+      "offdiag_median_percent": 0.0017055362786109636,
+      "offdiag_max_percent": 0.1795654966889813,
+      "column_offdiag_sum_range_percent": [
+        0.03025505264164785,
+        0.36636242080484716
+      ],
+      "target_share_range_percent": [
+        91.48647831576714,
+        99.73406719634423
+      ]
+    },
+    {
+      "run": "2",
+      "diag_range_percent": [
+        3.866396329066398,
+        19.2338586340536
+      ],
+      "offdiag_median_percent": 0.002432233305818453,
+      "offdiag_max_percent": 0.20972647458611668,
+      "column_offdiag_sum_range_percent": [
+        0.06200051933138856,
+        0.3876520176254658
+      ],
+      "target_share_range_percent": [
+        91.05329656602795,
+        99.43671089249068
+      ]
+    },
+    {
+      "run": "3",
+      "diag_range_percent": [
+        3.5748453739111135,
+        19.39556192677219
+      ],
+      "offdiag_median_percent": 0.0016652630964238847,
+      "offdiag_max_percent": 0.1517719425183399,
+      "column_offdiag_sum_range_percent": [
+        0.05617838447626172,
+        0.29076601937636226
+      ],
+      "target_share_range_percent": [
+        94.90697766321118,
+        99.64854792364844
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+﻿metric,value,spread,spread_type,unit,source_basis,note
+\bar T,88.564956,0.458109,SD,%,triplicate_transmittance_l0_8_stats.txt,三次 run 的通道平均透射率，再做 mean ± SD (n=3)
+T_min,83.959200,,,%,triplicate_transmittance_l0_8_stats.txt,按通道三次 run 平均后取最差通道，不加 ±
+\bar\eta_sort,93.257401,0.474590,SD,%,triplicate_full9_aggregate.xlsx:ER_summary,三次 run 的 9 通道平均 SignalShare，再做 mean ± SD (n=3)
+"\eta_sort,min",91.574759,,,%,triplicate_full9_aggregate.xlsx:ER_summary,按通道三次 run 平均后取最差通道，不加 ±
+\overline{ER_sum},11.486175,0.346123,SD,dB,triplicate_full9_aggregate.xlsx:ER_summary,三次 run 的 9 通道平均 ER_sum，再做 mean ± SD (n=3)
+"ER_sum,min",10.375229,,,dB,triplicate_full9_aggregate.xlsx:ER_summary,按通道三次 run 平均后取最差通道，不加 ±
+I(l;\hat l),2.656178,0.036194,SD,bits,"triplicate_full9_aggregate.xlsx:{1,2,3}_percentage",固定维度、等先验；分别由 3 个 run 的条件概率矩阵计算后做 mean ± SD (n=3)

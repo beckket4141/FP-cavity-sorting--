@@ -1,0 +1,5 @@
+N,math_optimal_branches_under_half_interval,practical_branches_in_lr_window,lr_window_min,lr_window_max
+9,3,1,0.2,0.8
+15,4,1,0.2,0.8
+30,4,1,0.2,0.8
+50,10,4,0.2,0.8

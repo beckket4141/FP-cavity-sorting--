@@ -1,0 +1,3 @@
+﻿label,role,family_id,family_type,member_peak_ids,auto_index,current_index,auto_lambda_nm,current_lambda_nm,index_offset_points,lambda_offset_nm,power_raw_uW,power_smooth_uW,adjustment_mode
+highest_peak,major_peak_1,2,single_peak_family,[3],287,287,794.9840173565269,794.9840173565269,0,0.0,198.0,190.58787185354387,auto
+second_highest_peak,major_peak_2,1,wrapped_edge_family,"[1, 8]",36,36,794.9747005853133,794.9747005853133,0,0.0,68.2,64.91098398169238,auto

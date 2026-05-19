@@ -1,0 +1,63 @@
+Radial-order and l-mixing proof summary
+
+1) Exact radial-order law for axisymmetric waist mismatch
+   For input LG_0^l with eta = w_in / w_0 and preserved cylindrical symmetry, the exact same-l radial decomposition obeys
+   |c_{p,l}|^2 = C(p+|l|, p) * [2 eta / (1+eta^2)]^(2|l|+2) * [(1-eta^2)/(1+eta^2)]^(2p).
+   Therefore the small parameter is s = (1-eta^2)/(1+eta^2), and each extra radial order brings another factor s^2.
+   Adjacent-order ratio:
+   |c_{p+1,l}|^2 / |c_{p,l}|^2 = ((p+|l|+1)/(p+1)) * s^2.
+
+2) Why p=1 is the first thing to worry about
+   When eta = 1 + eps with |eps| << 1, one has s ~= -eps, so
+   p=1 scales as O(eps^2), p=2 scales as O(eps^4), p=3 scales as O(eps^6).
+   Hence p=1 is the leading observable parasitic radial term under mild mismatch.
+
+Representative exact powers:
+  l=0, eta=0.98: p=0 -> 99.9592% p=1 -> 0.0408% p=2 -> 0.0000% p=3 -> 0.0000% p=4 -> 0.0000%
+  l=0, eta=0.95: p=0 -> 99.7374% p=1 -> 0.2619% p=2 -> 0.0007% p=3 -> 0.0000% p=4 -> 0.0000%
+  l=0, eta=0.90: p=0 -> 98.8981% p=1 -> 1.0898% p=2 -> 0.0120% p=3 -> 0.0001% p=4 -> 0.0000%
+  l=4, eta=0.98: p=0 -> 99.7961% p=1 -> 0.2036% p=2 -> 0.0002% p=3 -> 0.0000% p=4 -> 0.0000%
+  l=4, eta=0.95: p=0 -> 98.6937% p=1 -> 1.2960% p=2 -> 0.0102% p=3 -> 0.0001% p=4 -> 0.0000%
+  l=4, eta=0.90: p=0 -> 94.6105% p=1 -> 5.2127% p=2 -> 0.1723% p=3 -> 0.0044% p=4 -> 0.0001%
+  l=8, eta=0.98: p=0 -> 99.6334% p=1 -> 0.3659% p=2 -> 0.0007% p=3 -> 0.0000% p=4 -> 0.0000%
+  l=8, eta=0.95: p=0 -> 97.6609% p=1 -> 2.3085% p=2 -> 0.0303% p=3 -> 0.0003% p=4 -> 0.0000%
+  l=8, eta=0.90: p=0 -> 90.5088% p=1 -> 8.9760% p=2 -> 0.4945% p=3 -> 0.0200% p=4 -> 0.0007%
+
+3) Why l stays fixed for axisymmetric mismatch
+   If E_in(r,phi) = f(r) exp(i l_target phi), then projection onto cavity LG_p^{l'} gives
+   c_{p,l'} propto integral dphi exp(i(l_target-l')phi) = 2 pi delta_{l',l_target}.
+   So waist-size mismatch, waist-position mismatch, curvature mismatch, and centered circular clipping can change p, but cannot change l as long as cylindrical symmetry about the same axis is preserved.
+
+4) When l-mixing appears
+   l-mixing requires symmetry breaking: lateral decentering, angular tilt, astigmatism, or off-center clipping.
+   For tilt along x, exp(i k_x x) = exp(i k_x r cos phi) = sum_m i^m J_m(k_x r) exp(i m phi),
+   so multiplying LG_0^l immediately generates l+m components.
+
+Representative numerical decomposition (power summed over retained basis window):
+  case=axisymmetric_z_offset, l_target=0, control=0.100: target_l=100.000%, other_l=0.000%, target_mode=99.751%, p1=0.249%, p>=2=0.001%
+  case=axisymmetric_z_offset, l_target=0, control=0.250: target_l=100.000%, other_l=0.000%, target_mode=98.462%, p1=1.515%, p>=2=0.024%
+  case=axisymmetric_z_offset, l_target=0, control=0.500: target_l=100.000%, other_l=0.000%, target_mode=94.118%, p1=5.536%, p>=2=0.346%
+  case=lateral_shift, l_target=0, control=0.050: target_l=99.750%, other_l=0.125%, target_mode=99.750%, p1=0.000%, p>=2=0.000%
+  case=lateral_shift, l_target=0, control=0.100: target_l=99.007%, other_l=0.496%, target_mode=99.005%, p1=0.002%, p>=2=0.000%
+  case=lateral_shift, l_target=0, control=0.200: target_l=96.117%, other_l=1.941%, target_mode=96.079%, p1=0.039%, p>=2=0.000%
+  case=phase_tilt_x, l_target=0, control=0.100: target_l=99.750%, other_l=0.125%, target_mode=99.750%, p1=0.000%, p>=2=0.000%
+  case=phase_tilt_x, l_target=0, control=0.200: target_l=99.007%, other_l=0.496%, target_mode=99.005%, p1=0.002%, p>=2=0.000%
+  case=phase_tilt_x, l_target=0, control=0.400: target_l=96.117%, other_l=1.941%, target_mode=96.079%, p1=0.039%, p>=2=0.000%
+  case=axisymmetric_z_offset, l_target=4, control=0.100: target_l=100.000%, other_l=0.000%, target_mode=98.759%, p1=1.231%, p>=2=0.009%
+  case=axisymmetric_z_offset, l_target=4, control=0.250: target_l=100.000%, other_l=0.000%, target_mode=92.541%, p1=7.119%, p>=2=0.341%
+  case=axisymmetric_z_offset, l_target=4, control=0.500: target_l=100.000%, other_l=0.000%, target_mode=73.851%, p1=21.721%, p>=2=4.428%
+  case=lateral_shift, l_target=4, control=0.050: target_l=98.757%, other_l=1.243%, target_mode=98.756%, p1=0.125%, p>=2=0.000%
+  case=lateral_shift, l_target=4, control=0.100: target_l=95.111%, other_l=4.889%, target_mode=95.099%, p1=0.498%, p>=2=0.001%
+  case=lateral_shift, l_target=4, control=0.200: target_l=81.710%, other_l=18.290%, target_mode=81.533%, p1=1.960%, p>=2=0.020%
+  case=phase_tilt_x, l_target=4, control=0.100: target_l=98.757%, other_l=1.243%, target_mode=98.756%, p1=0.125%, p>=2=0.000%
+  case=phase_tilt_x, l_target=4, control=0.200: target_l=95.111%, other_l=4.889%, target_mode=95.099%, p1=0.498%, p>=2=0.001%
+  case=phase_tilt_x, l_target=4, control=0.400: target_l=81.710%, other_l=18.290%, target_mode=81.533%, p1=1.960%, p>=2=0.020%
+  case=axisymmetric_z_offset, l_target=8, control=0.100: target_l=100.000%, other_l=0.000%, target_mode=97.778%, p1=2.195%, p>=2=0.028%
+  case=axisymmetric_z_offset, l_target=8, control=0.250: target_l=100.000%, other_l=0.000%, target_mode=86.976%, p1=12.043%, p>=2=0.981%
+  case=axisymmetric_z_offset, l_target=8, control=0.500: target_l=99.999%, other_l=0.000%, target_mode=57.948%, p1=30.678%, p>=2=11.372%
+  case=lateral_shift, l_target=8, control=0.050: target_l=97.771%, other_l=2.229%, target_mode=97.770%, p1=0.125%, p>=2=0.000%
+  case=lateral_shift, l_target=8, control=0.100: target_l=91.331%, other_l=8.669%, target_mode=91.309%, p1=0.498%, p>=2=0.001%
+  case=lateral_shift, l_target=8, control=0.200: target_l=68.982%, other_l=31.017%, target_mode=68.688%, p1=1.960%, p>=2=0.020%
+  case=phase_tilt_x, l_target=8, control=0.100: target_l=97.771%, other_l=2.229%, target_mode=97.770%, p1=0.125%, p>=2=0.000%
+  case=phase_tilt_x, l_target=8, control=0.200: target_l=91.331%, other_l=8.669%, target_mode=91.309%, p1=0.498%, p>=2=0.001%
+  case=phase_tilt_x, l_target=8, control=0.400: target_l=68.982%, other_l=31.017%, target_mode=68.688%, p1=1.960%, p>=2=0.020%

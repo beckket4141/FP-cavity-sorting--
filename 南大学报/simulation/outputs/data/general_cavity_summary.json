@@ -1,0 +1,10 @@
+{
+  "max_backsubstitution_abs_error": 2.498001805406602e-16,
+  "small_rho_limit": "symmetric double-concave / plane-concave -> sqrt(2), not 2",
+  "m9_plane_concave_preferred_m": 2,
+  "m9_symmetric_double_concave_preferred_m": 4,
+  "asymmetric_example": {
+    "R1": 30.0,
+    "R2": 45.0
+  }
+}

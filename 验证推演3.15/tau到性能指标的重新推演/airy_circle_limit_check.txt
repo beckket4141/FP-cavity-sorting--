@@ -1,0 +1,55 @@
+Exact finite-dimensional Airy circular sum vs. its large-M limit
+
+Model: consecutive M-mode family at fixed threshold tau0, with F = M * tau0.
+The direct Airy sum on the circle is compared with an exact closed form and with
+the large-M limit pi/(2*tau0) * coth(pi/(2*tau0)) - 1, which equals the Lorentzian
+infinite-line sum.
+
+tau0=1.0: limit_noise=0.712688574960, limit_ER=1.471002033 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.605053300805, limit-direct=1.076352741549e-01, ER=2.182063655 dB
+  M=   9: noise=0.689502666908, limit-direct=2.318590805200e-02, ER=1.614640497 dB
+  M=  30: noise=0.710558170125, limit-direct=2.130404834504e-03, ER=1.484003626 dB
+  M= 100: noise=0.712496475841, limit-direct=1.920991187099e-04, ER=1.472172794 dB
+  M=1000: noise=0.712686653612, limit-direct=1.921347152711e-06, ER=1.471013741 dB
+
+tau0=2.0: limit_noise=0.197629012645, limit_ER=7.041492991 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.180295001984, limit-direct=1.733401066078e-02, ER=7.440163123 dB
+  M=   9: noise=0.194126327949, limit-direct=3.502684695944e-03, ER=7.119155604 dB
+  M=  30: noise=0.197312134784, limit-direct=3.168778613646e-04, ER=7.048462046 dB
+  M= 100: noise=0.197600480301, limit-direct=2.853234456138e-05, ER=7.042120041 dB
+  M=1000: noise=0.197628727309, limit-direct=2.853365258515e-07, ER=7.041499261 dB
+
+tau0=3.0: limit_noise=0.089757421029, limit_ER=10.469296344 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.083114029408, limit-direct=6.643391620523e-03, ER=10.803256624 dB
+  M=   9: noise=0.088431799444, limit-direct=1.325621584518e-03, ER=10.533915377 dB
+  M=  30: noise=0.089637842256, limit-direct=1.195787726602e-04, ER=10.475086063 dB
+  M= 100: noise=0.089746656723, limit-direct=1.076430562974e-05, ER=10.469817210 dB
+  M=1000: noise=0.089757313384, limit-direct=1.076452330606e-07, ER=10.469301552 dB
+
+tau0=4.0: limit_noise=0.050883355300, limit_ER=12.934242586 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.047370300506, limit-direct=3.513054793245e-03, ER=13.244938602 dB
+  M=   9: noise=0.050185460384, limit-direct=6.978949160630e-04, ER=12.994220874 dB
+  M=  30: noise=0.050820464334, limit-direct=6.289096547731e-05, ER=12.939613712 dB
+  M= 100: noise=0.050877694460, limit-direct=5.660839339998e-06, ER=12.934725771 dB
+  M=1000: noise=0.050883298691, limit-direct=5.660903602822e-08, ER=12.934247418 dB
+
+tau0=5.0: limit_noise=0.032684231493, limit_ER=14.856617222 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.030504002853, limit-direct=2.180228639643e-03, ER=15.156431671 dB
+  M=   9: noise=0.032251999674, limit-direct=4.322318187444e-04, ER=14.914433533 dB
+  M=  30: noise=0.032645298832, limit-direct=3.893266102168e-05, ER=14.861793516 dB
+  M= 100: noise=0.032680727296, limit-direct=3.504197308310e-06, ER=14.857082870 dB
+  M=1000: noise=0.032684196451, limit-direct=3.504222803596e-08, ER=14.856621878 dB
+
+tau0=6.0: limit_noise=0.022742592514, limit_ER=16.431600300 dB
+  monotone_in_M_on_test_grid = True
+  M=   4: noise=0.021254588181, limit-direct=1.488004333268e-03, ER=16.725473053 dB
+  M=   9: noise=0.022447922716, limit-direct=2.946697985106e-04, ER=16.488238415 dB
+  M=  30: noise=0.022716057201, limit-direct=2.653531326619e-05, ER=16.436670464 dB
+  M= 100: noise=0.022740204214, limit-direct=2.388300032914e-06, ER=16.432056395 dB
+  M=1000: noise=0.022742568631, limit-direct=2.388312137641e-08, ER=16.431604860 dB
+

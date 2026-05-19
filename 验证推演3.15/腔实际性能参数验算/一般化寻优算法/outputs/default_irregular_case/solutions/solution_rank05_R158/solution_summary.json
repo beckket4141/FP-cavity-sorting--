@@ -1,0 +1,27 @@
+{
+  "rank": 5,
+  "region_id": "R158",
+  "k": 0.25332666666666664,
+  "L_over_R": 0.5104502705748287,
+  "subset_modes": [
+    1,
+    4,
+    6,
+    15,
+    37,
+    40,
+    46
+  ],
+  "subset_size": 7,
+  "s_min": 0.11975999999999903,
+  "F_min": 25.050100200401005,
+  "F_eval_used": 32.0,
+  "avg_ER_sum_dB": 13.907703211312539,
+  "avg_separation_efficiency": 0.9605068161281209,
+  "min_ER_sum_dB": 13.053110842928016,
+  "min_separation_efficiency": 0.952826019422837,
+  "geometry_gap_to_target": 0.010450270574828724,
+  "k_region_start": 0.25262666666666667,
+  "k_region_end": 0.25399999999999995,
+  "region_point_count": 57
+}

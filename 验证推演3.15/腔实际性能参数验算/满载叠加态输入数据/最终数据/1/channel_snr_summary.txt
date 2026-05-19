@@ -1,0 +1,31 @@
+FP Channel SNR Report (Transmission-Normalized Calibration)
+Generated at: 2026-03-24T18:57:46
+
+9D:
+  SNR_sum_dB(det): mean=11.577, min=10.876, max=12.369
+  ER_pair_max_dB(det): mean=16.231, min=14.855, max=17.189
+  Per-channel:
+    ch=0: SNR_sum=12.369 dB, MC=12.369+/-0.021 dB, CI95=[12.327,12.411] | ER_pair_max=17.189 dB, MC=17.188+/-0.030, CI95=[17.128,17.248]
+    ch=1: SNR_sum=12.262 dB, MC=12.256+/-0.032 dB, CI95=[12.191,12.319] | ER_pair_max=16.695 dB, MC=16.694+/-0.042, CI95=[16.614,16.777]
+    ch=2: SNR_sum=12.124 dB, MC=12.124+/-0.042 dB, CI95=[12.042,12.208] | ER_pair_max=17.072 dB, MC=17.072+/-0.022, CI95=[17.028,17.115]
+    ch=3: SNR_sum=11.497 dB, MC=11.497+/-0.027 dB, CI95=[11.446,11.549] | ER_pair_max=14.855 dB, MC=14.855+/-0.014, CI95=[14.827,14.884]
+    ch=4: SNR_sum=10.876 dB, MC=10.875+/-0.071 dB, CI95=[10.734,11.013] | ER_pair_max=15.354 dB, MC=15.354+/-0.027, CI95=[15.302,15.408]
+    ch=5: SNR_sum=11.399 dB, MC=11.396+/-0.052 dB, CI95=[11.294,11.502] | ER_pair_max=16.475 dB, MC=16.476+/-0.027, CI95=[16.423,16.529]
+    ch=6: SNR_sum=11.297 dB, MC=11.298+/-0.079 dB, CI95=[11.145,11.452] | ER_pair_max=16.035 dB, MC=16.035+/-0.020, CI95=[15.997,16.074]
+    ch=7: SNR_sum=11.111 dB, MC=11.112+/-0.075 dB, CI95=[10.965,11.262] | ER_pair_max=16.059 dB, MC=16.060+/-0.016, CI95=[16.030,16.090]
+    ch=8: SNR_sum=11.257 dB, MC=11.257+/-0.025 dB, CI95=[11.209,11.307] | ER_pair_max=16.345 dB, MC=16.345+/-0.019, CI95=[16.307,16.383]
+
+4D:
+  SNR_sum_dB(det): mean=16.610, min=15.360, max=18.716
+  ER_pair_max_dB(det): mean=18.909, min=17.939, max=19.696
+  Per-channel:
+    ch=0: SNR_sum=18.716 dB, MC=18.716+/-0.044 dB, CI95=[18.632,18.802] | ER_pair_max=19.527 dB, MC=19.526+/-0.053, CI95=[19.426,19.632]
+    ch=1: SNR_sum=16.360 dB, MC=16.360+/-0.079 dB, CI95=[16.208,16.516] | ER_pair_max=17.939 dB, MC=17.938+/-0.095, CI95=[17.752,18.124]
+    ch=2: SNR_sum=15.360 dB, MC=15.361+/-0.044 dB, CI95=[15.274,15.450] | ER_pair_max=18.476 dB, MC=18.478+/-0.082, CI95=[18.319,18.641]
+    ch=3: SNR_sum=16.004 dB, MC=16.004+/-0.025 dB, CI95=[15.957,16.055] | ER_pair_max=19.696 dB, MC=19.696+/-0.057, CI95=[19.585,19.811]
+
+Definitions:
+  S_ij = P_SMF(i|j) / P_trans(j)
+  y^(j) = S x^(j), solved by NNLS with x>=0
+  SNR_sum_dB = 10log10(P_j / sum_{i!=j} P_i)
+  ER_pair_max_dB = 10log10(P_j / max_{i!=j} P_i)

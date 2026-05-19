@@ -1,0 +1,34 @@
+General FP cavity extension summary
+==================================
+
+1. The folded-spectrum framework remains unchanged once the effective step
+   k_eff = arccos(sqrt(g1*g2))/pi is used.
+
+2. The plane-concave mapping is
+   rho = L/R = sin^2(pi k_eff).
+
+3. The symmetric double-concave mapping is
+   rho = L/R = 1 +/- cos(pi k_eff).
+
+4. Therefore, the symmetric double-concave cavity is not obtained by
+   replacing L with 2L in the plane-concave formula.
+
+5. At the plane-concave M=9 design point rho=0.413175911167,
+   k_pc=0.222222222222, k_cc=0.300378009331,
+   k_cc/k_pc=1.351701041991.
+
+6. In the small-rho limit, k_cc / k_pc -> sqrt(2), not 2.
+
+7. For M=9, the most robust representative branch changes:
+   plane-concave prefers m=2, while symmetric double-concave prefers m=4
+   because the robustness optimum moves toward the confocal point rho=1.
+
+plane-concave limit: k=0.111111111111, recovered=0.111111111111, abs_err=2.776e-17
+symmetric double-concave branch: branch=near_planar, k=0.111111111111, recovered=0.111111111111, abs_err=2.776e-17
+symmetric double-concave branch: branch=near_concentric, k=0.111111111111, recovered=0.111111111111, abs_err=2.776e-17
+plane-concave limit: k=0.222222222222, recovered=0.222222222222, abs_err=2.776e-17
+symmetric double-concave branch: branch=near_planar, k=0.222222222222, recovered=0.222222222222, abs_err=5.551e-17
+symmetric double-concave branch: branch=near_concentric, k=0.222222222222, recovered=0.222222222222, abs_err=8.327e-17
+plane-concave limit: k=0.444444444444, recovered=0.444444444444, abs_err=5.551e-17
+symmetric double-concave branch: branch=near_planar, k=0.444444444444, recovered=0.444444444444, abs_err=0.000e+00
+symmetric double-concave branch: branch=near_concentric, k=0.444444444444, recovered=0.444444444444, abs_err=5.551e-17

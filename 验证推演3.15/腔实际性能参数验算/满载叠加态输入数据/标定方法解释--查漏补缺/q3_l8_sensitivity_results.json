@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-03-28T17:38:51",
+  "data_root": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据",
+  "baseline_runs": [
+    {
+      "run": "1",
+      "s88": 0.03936938074492585,
+      "s55": 0.09336145476031948,
+      "s11": 0.1983829055169235,
+      "diag_mean_percent": 93.46113298115327,
+      "diag_l8_percent": 93.03426276139744,
+      "er_mean_db": 11.576789503929408,
+      "er_l8_db": 11.25675832482526,
+      "x88_uW": 6.4172674039499125
+    },
+    {
+      "run": "2",
+      "s88": 0.03866396329066398,
+      "s55": 0.09026265549744411,
+      "s11": 0.192338586340536,
+      "diag_mean_percent": 93.34650099386681,
+      "diag_l8_percent": 92.57194333374851,
+      "er_mean_db": 11.516646016618942,
+      "er_l8_db": 10.956041726596341,
+      "x88_uW": 8.30394814862207
+    },
+    {
+      "run": "3",
+      "s88": 0.03574845373911113,
+      "s55": 0.08931508389763677,
+      "s11": 0.1939556192677219,
+      "diag_mean_percent": 92.76774996947961,
+      "diag_l8_percent": 92.03295737094709,
+      "er_mean_db": 11.123544334021835,
+      "er_l8_db": 10.626462368534161,
+      "x88_uW": 7.407610183654929
+    }
+  ],
+  "s88_stats": {
+    "mean_percent": 3.7927265924900326,
+    "std_percent": 0.19195885892299747,
+    "rel_std_percent": 5.061236401882875
+  },
+  "s55_stats": {
+    "mean_percent": 9.097973138513346,
+    "std_percent": 0.21163477174417727,
+    "rel_std_percent": 2.32617494602495
+  },
+  "scenario_families": [
+    {
+      "scenario": "只改 S88",
+      "results": [
+        {
+          "factor": 0.99,
+          "diag_mean_percent": 93.19396852544357,
+          "diag_l8_percent": 92.63571314217619,
+          "er_mean_db": 11.406481287923205,
+          "er_l8_db": 11.003066814084006,
+          "x88_uW": 7.450592736067422,
+          "delta_diag_mean_percent_point": 0.002173877277002134,
+          "delta_diag_l8_percent_point": 0.08932532014517847,
+          "delta_er_mean_db": 0.0008213363998095247,
+          "delta_er_l8_db": 0.05664600743208581,
+          "delta_x88_percent": 1.0075205735402326
+        },
+        {
+          "factor": 1.01,
+          "diag_mean_percent": 93.18949065087206,
+          "diag_l8_percent": 92.45723163386849,
+          "er_mean_db": 11.404826207529627,
+          "er_l8_db": 10.890502764689547,
+          "x88_uW": 7.303423282498545,
+          "delta_diag_mean_percent_point": -0.0023039972945042564,
+          "delta_diag_l8_percent_point": -0.08915618816251936,
+          "delta_er_mean_db": -0.0008337439937680102,
+          "delta_er_l8_db": -0.055918041962373266,
+          "delta_x88_percent": -0.9876524463450331
+        },
+        {
+          "factor": 0.95,
+          "diag_mean_percent": 93.20127268197255,
+          "diag_l8_percent": 92.99471343664777,
+          "er_mean_db": 11.40963556270452,
+          "er_l8_db": 11.237325956206647,
+          "x88_uW": 7.763437766076273,
+          "delta_diag_mean_percent_point": 0.009478033805990549,
+          "delta_diag_l8_percent_point": 0.44832561461676335,
+          "delta_er_mean_db": 0.003975611181123995,
+          "delta_er_l8_db": 0.29090514955472635,
+          "delta_x88_percent": 5.2487537108688365
+        },
+        {
+          "factor": 1.05,
+          "diag_mean_percent": 93.17905519176657,
+          "diag_l8_percent": 92.10229037634771,
+          "er_mean_db": 11.401373923263229,
+          "er_l8_db": 10.673751341413924,
+          "x88_uW": 7.025837885406798,
+          "delta_diag_mean_percent_point": -0.012739456399998517,
+          "delta_diag_l8_percent_point": -0.44409744568329756,
+          "delta_er_mean_db": -0.004286028260166219,
+          "delta_er_l8_db": -0.2726694652379962,
+          "delta_x88_percent": -4.750871521779054
+        },
+        {
+          "factor": 0.9,
+          "diag_mean_percent": 93.20689393028901,
+          "diag_l8_percent": 93.44731474915805,
+          "er_mean_db": 11.41325665737594,
+          "er_l8_db": 11.549078815497579,
+          "x88_uW": 8.193405067388017,
+          "delta_diag_mean_percent_point": 0.015099282122449154,
+          "delta_diag_l8_percent_point": 0.9009269271270455,
+          "delta_er_mean_db": 0.007596705852545682,
+          "delta_er_l8_db": 0.6026580088456583,
+          "delta_x88_percent": 11.077810884126539
+        },
+        {
+          "factor": 1.1,
+          "diag_mean_percent": 93.16354341234523,
+          "diag_l8_percent": 91.66237190937183,
+          "er_mean_db": 11.396818879927675,
+          "er_l8_db": 10.417167477751857,
+          "x88_uW": 6.707143801709139,
+          "delta_diag_mean_percent_point": -0.0282512358213296,
+          "delta_diag_l8_percent_point": -0.88401591265918,
+          "delta_er_mean_db": -0.008841071595719896,
+          "delta_er_l8_db": -0.5292533289000634,
+          "delta_x88_percent": -9.071400150317077
+        }
+      ]
+    },
+    {
+      "scenario": "整列 S[:,8] 一起改",
+      "results": [
+        {
+          "factor": 0.99,
+          "diag_mean_percent": 93.19129773679757,
+          "diag_l8_percent": 92.6154031514765,
+          "er_mean_db": 11.40474209471795,
+          "er_l8_db": 10.990068860676425,
+          "x88_uW": 7.450783076170677,
+          "delta_diag_mean_percent_point": -0.0004969113689980986,
+          "delta_diag_l8_percent_point": 0.0690153294454916,
+          "delta_er_mean_db": -0.0009178568054455383,
+          "delta_er_l8_db": 0.043648054024505,
+          "delta_x88_percent": 1.0101010101010166
+        },
+        {
+          "factor": 1.01,
+          "diag_mean_percent": 93.19214432204163,
+          "diag_l8_percent": 92.47747558325756,
+          "er_mean_db": 11.406527228726498,
+          "er_l8_db": 10.903207068825498,
+          "x88_uW": 7.303242817236604,
+          "delta_diag_mean_percent_point": 0.00034967387506412706,
+          "delta_diag_l8_percent_point": -0.06891223877344999,
+          "delta_er_mean_db": 0.0008672772031026454,
+          "delta_er_l8_db": -0.043213737826421905,
+          "delta_x88_percent": -0.990099009900991
+        },
+        {
+          "factor": 0.95,
+          "diag_mean_percent": 93.18773997187643,
+          "diag_l8_percent": 92.89250003052176,
+          "er_mean_db": 11.400530524565543,
+          "er_l8_db": 11.16918475376345,
+          "x88_uW": 7.764500258325232,
+          "delta_diag_mean_percent_point": -0.004054676290138559,
+          "delta_diag_l8_percent_point": 0.3461122084907515,
+          "delta_er_mean_db": -0.0051294269578523455,
+          "delta_er_l8_db": 0.22276394711152925,
+          "delta_x88_percent": 5.2631578947368585
+        },
+        {
+          "factor": 1.05,
+          "diag_mean_percent": 93.19215919842937,
+          "diag_l8_percent": 92.20285291520736,
+          "er_mean_db": 11.409521714602365,
+          "er_l8_db": 10.734527815952548,
+          "x88_uW": 7.0250240432466375,
+          "delta_diag_mean_percent_point": 0.00036455026280179936,
+          "delta_diag_l8_percent_point": -0.34353490682364907,
+          "delta_er_mean_db": 0.00386176307896946,
+          "delta_er_l8_db": -0.21189299069937206,
+          "delta_x88_percent": -4.761904761904767
+        },
+        {
+          "factor": 0.9,
+          "diag_mean_percent": 93.17934936169955,
+          "diag_l8_percent": 93.24121874217167,
+          "er_mean_db": 11.393906807777029,
+          "er_l8_db": 11.40399571225868,
+          "x88_uW": 8.195861383787747,
+          "delta_diag_mean_percent_point": -0.012445286467013261,
+          "delta_diag_l8_percent_point": 0.6948309201406602,
+          "delta_er_mean_db": -0.01175314374636649,
+          "delta_er_l8_db": 0.4575749056067604,
+          "delta_x88_percent": 11.11111111111114
+        },
+        {
+          "factor": 1.1,
+          "diag_mean_percent": 93.18936346542789,
+          "diag_l8_percent": 91.86186654441609,
+          "er_mean_db": 11.412302418659529,
+          "er_l8_db": 10.532493955069672,
+          "x88_uW": 6.705704768553609,
+          "delta_diag_mean_percent_point": -0.002431182738675375,
+          "delta_diag_l8_percent_point": -0.6845212776149197,
+          "delta_er_mean_db": 0.00664246713613359,
+          "delta_er_l8_db": -0.4139268515822483,
+          "delta_x88_percent": -9.090909090909093
+        }
+      ]
+    }
+  ]
+}

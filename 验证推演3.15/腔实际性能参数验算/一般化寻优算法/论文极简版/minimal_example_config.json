@@ -1,0 +1,22 @@
+{
+  "scenario_name": "thesis_ch05_section54_random_fullset_example",
+  "wavelength_nm": 795.0,
+  "refractive_index_note": "Same cavity material / same n as the main 795 nm scenario; kept as metadata only because the search itself is dimensionless in k and L/R.",
+  "candidate_modes": [1, 4, 6, 10, 15, 18, 22, 27, 31, 37, 40, 46],
+  "tau_targets": [3.0, 5.0],
+  "search": {
+    "k_min": 0.2,
+    "k_max": 0.3,
+    "coarse_samples": 200001,
+    "refine_half_window": 0.0002,
+    "refine_samples": 200001,
+    "local_optima_to_export": 20,
+    "export_stride": 10
+  },
+  "geometry_constraints": {
+    "L_over_R_min": null,
+    "L_over_R_max": null,
+    "target_L_over_R": 0.5
+  },
+  "notes": "Minimal full-set search for thesis Section 5.4. Following the Chapter 5 writing logic, the default search is restricted to a moderate branch window k in [0.2, 0.3] to avoid the extreme m=1-type solutions near k->0 and the near-confocal side near k->0.5."
+}

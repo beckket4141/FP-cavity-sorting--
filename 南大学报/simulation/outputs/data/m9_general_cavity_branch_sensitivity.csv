@@ -1,0 +1,10 @@
+﻿geometry,branch,M,m,k_star,rho_L_over_R,sensitivity,robustness_rank_note
+plane_concave,single,9,1,0.1111111111111111,0.11697777844051097,0.49520227426134916,best for plane-concave is smallest sensitivity; m=2
+symmetric_double_concave,near_planar,9,1,0.1111111111111111,0.06030737921409157,0.9306758458395792,best for symmetric double-concave is smallest sensitivity; m=4
+symmetric_double_concave,near_concentric,9,1,0.1111111111111111,1.9396926207859084,0.9306758458395792,best for symmetric double-concave is smallest sensitivity; m=4
+plane_concave,single,9,2,0.2222222222222222,0.41317591116653474,0.3232203292573437,best for plane-concave is smallest sensitivity; m=2
+symmetric_double_concave,near_planar,9,2,0.2222222222222222,0.233955556881022,0.49520227426134905,best for symmetric double-concave is smallest sensitivity; m=4
+symmetric_double_concave,near_concentric,9,2,0.2222222222222222,1.766044443118978,0.49520227426134905,best for symmetric double-concave is smallest sensitivity; m=4
+plane_concave,single,9,4,0.4444444444444444,0.9698463103929541,0.9306758458395774,best for plane-concave is smallest sensitivity; m=2
+symmetric_double_concave,near_planar,9,4,0.4444444444444444,0.8263518223330696,0.3232203292573437,best for symmetric double-concave is smallest sensitivity; m=4
+symmetric_double_concave,near_concentric,9,4,0.4444444444444444,1.1736481776669305,0.3232203292573437,best for symmetric double-concave is smallest sensitivity; m=4

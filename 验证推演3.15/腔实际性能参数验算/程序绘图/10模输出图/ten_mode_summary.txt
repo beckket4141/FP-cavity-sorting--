@@ -1,0 +1,31 @@
+0.88 mm / 原始数据 / 十模闭合验证摘要
+
+数据口径
+- dataset_key = 0p88mm
+- analysis_source_label = 原始数据
+- FSR_final = 9.915474790 GHz
+- k_theory = 2/9 = 0.222222222
+
+位置验证
+- merged RMS residual = 0.289% FSR
+- merged max residual = 0.372% FSR at l=2
+- l=9 closure residual = 0.231% FSR
+
+l=0 与 l=9 冲突量
+- nu(l=0) = 377109.401977681 GHz
+- nu(l=9) = 377109.424909635 GHz
+- delta_nu = 22.932 MHz
+- delta_pos = 0.231% FSR
+- FWHM(l=0) = 309.031 MHz
+- FWHM(l=9) = 307.763 MHz
+- delta/FWHM(l=0) = 0.0742
+- delta/FWHM(l=9) = 0.0745
+
+基于归一化 Lorentz 峰模型的相对串扰
+- T_9(nu_0) = 0.978275
+- T_0(nu_9) = 0.978449
+
+峰重叠面积
+- overlap_area = 423.615 MHz
+- overlap / area(l=0) = 0.872668
+- overlap / area(l=9) = 0.876262

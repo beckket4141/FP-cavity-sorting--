@@ -1,0 +1,22 @@
+Triplicate Transmittance Aggregation (l=0..8)
+Generated at: 2026-03-28T18:59:20
+Base directory: current script directory
+Input runs: 1, 2, 3
+Formula: transmittance = P_after / P_before
+
+Per-l summary (ratio and percentage):
+  l=0: run1=0.922610 (92.26%), run2=0.936620 (93.66%), run3=0.927553 (92.76%); mean=0.928928, std=0.007105, mean+std format: 92.89% +/- 0.71%
+  l=1: run1=0.914406 (91.44%), run2=0.926807 (92.68%), run3=0.908579 (90.86%); mean=0.916598, std=0.009309, mean+std format: 91.66% +/- 0.93%
+  l=2: run1=0.893961 (89.40%), run2=0.915493 (91.55%), run3=0.905529 (90.55%); mean=0.904994, std=0.010776, mean+std format: 90.50% +/- 1.08%
+  l=3: run1=0.866838 (86.68%), run2=0.899486 (89.95%), run3=0.898266 (89.83%); mean=0.888197, std=0.018507, mean+std format: 88.82% +/- 1.85%
+  l=4: run1=0.857241 (85.72%), run2=0.896588 (89.66%), run3=0.904159 (90.42%); mean=0.885996, std=0.025188, mean+std format: 88.60% +/- 2.52%
+  l=5: run1=0.839385 (83.94%), run2=0.877444 (87.74%), run3=0.879458 (87.95%); mean=0.865429, std=0.022577, mean+std format: 86.54% +/- 2.26%
+  l=6: run1=0.814286 (81.43%), run2=0.872346 (87.23%), run3=0.867647 (86.76%); mean=0.851426, std=0.032250, mean+std format: 85.14% +/- 3.23%
+  l=7: run1=0.799679 (79.97%), run2=0.850441 (85.04%), run3=0.829298 (82.93%); mean=0.826473, std=0.025499, mean+std format: 82.65% +/- 2.55%
+  l=8: run1=0.799166 (79.92%), run2=0.840576 (84.06%), run3=0.841451 (84.15%); mean=0.827064, std=0.024165, mean+std format: 82.71% +/- 2.42%
+
+Overall (all l and all runs):
+  mean=0.877234, std=0.039852, mean+std format: 87.72% +/- 3.99%
+
+Output file:
+  - TXT: triplicate_transmittance_l0_8_stats.txt

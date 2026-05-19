@@ -1,0 +1,7 @@
+input_csv=D:\自制软件\1.thesis\My_nju_thesis-master\thesis\验证推演3.15\腔实际性能参数验算\光腰为0.88mm测得数据\FSR补全后数据\处理后数据\DATA70_l0_symmetrized_l0_final_crosstalk_reduced.csv
+active_label=peak_rank_2
+current_candidate_count=2
+detection_params={"smooth_window": 21, "smooth_polyorder": 3, "prominence_frac": 0.01, "prominence_abs": 1.0, "height_frac": 0.02, "height_abs": 3.0, "distance_points": 20, "min_width_points": 3.0, "edge_margin_frac": 0.18, "main_family_count": 2}
+active_peak: rank=2 | lambda_nm=794.974770772643 | raw_uW=48.104816 | smooth_uW=45.534819 | mode=reduce(20.0%)
+action_history:
+  1. lambda_nm=794.974770772643 | reduction_frac=0.200000 | old_uW=59.236311 | new_uW=48.104816 | modified_points=274

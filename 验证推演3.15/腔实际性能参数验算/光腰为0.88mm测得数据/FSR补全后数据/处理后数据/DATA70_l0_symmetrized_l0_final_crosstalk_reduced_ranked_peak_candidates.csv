@@ -1,0 +1,3 @@
+﻿label,rank,display_name,peak_id,family_id,family_type,family_role,member_peak_ids,current_index,current_lambda_nm,power_raw_uW,power_smooth_uW,adjustment_mode,is_active
+peak_rank_1,1,第1高峰,2,1,wrapped_edge_family,major_peak_1,"[1, 2]",619,794.9956696469529,59.70000000742355,56.39490030154491,auto,0
+peak_rank_2,2,第2高峰,1,1,wrapped_edge_family,major_peak_1,"[1, 2]",41,794.9747707726432,48.10481559766536,45.53481899933412,reduce(20.0%),1

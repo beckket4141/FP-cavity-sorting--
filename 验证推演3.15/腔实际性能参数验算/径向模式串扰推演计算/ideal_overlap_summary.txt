@@ -1,0 +1,52 @@
+Ideal LG-FP overlap summary
+
+Definitions:
+  LG target overlap power: |c_{0,l}|^2 = [2 eta / (1 + eta^2)]^(2|l|+2), eta = w_in / w_cav.
+  Exact p=1 leakage power:
+  |c_{1,l}|^2 = (|l|+1) * [2 eta / (1 + eta^2)]^(2|l|+2) * [(1-eta^2)/(1+eta^2)]^2.
+  Ring radius for LG_{0}^{l}: r_peak = w * sqrt(|l| / 2).
+  RMS radius: r_rms = w * sqrt((|l|+1) / 2).
+
+Canonical same-w0 strategy:
+  l=0: eta=1.0000, target=100.00%, p1=0.00%
+  l=1: eta=1.0000, target=100.00%, p1=0.00%
+  l=2: eta=1.0000, target=100.00%, p1=0.00%
+  l=3: eta=1.0000, target=100.00%, p1=0.00%
+  l=4: eta=1.0000, target=100.00%, p1=0.00%
+  l=5: eta=1.0000, target=100.00%, p1=0.00%
+  l=6: eta=1.0000, target=100.00%, p1=0.00%
+  l=7: eta=1.0000, target=100.00%, p1=0.00%
+  l=8: eta=1.0000, target=100.00%, p1=0.00%
+
+Canonical scaled-w0 strategy (w_l = w0 / sqrt(|l|+1)):
+  l=0: eta=1.0000, target=100.00%, p1=0.00%
+  l=1: eta=0.7071, target=79.01%, p1=17.56%
+  l=2: eta=0.5774, target=42.19%, p1=31.64%
+  l=3: eta=0.5000, target=16.78%, p1=24.16%
+  l=4: eta=0.4472, target=5.29%, p1=11.76%
+  l=5: eta=0.4082, target=1.38%, p1=4.23%
+  l=6: eta=0.3780, target=0.31%, p1=1.21%
+  l=7: eta=0.3536, target=0.06%, p1=0.29%
+  l=8: eta=0.3333, target=0.01%, p1=0.06%
+
+Custom eta scan strategy: same_w0
+  eta list: 0.400, 0.550, 0.700, 0.850, 1.000, 1.150, 1.300
+
+Numerical z-offset scan (same w0, same l, same cavity q family except waist position):
+  l=0, Dz/zR=0.00: target=100.00%
+  l=0, Dz/zR=0.25: target=98.46%
+  l=0, Dz/zR=0.50: target=94.12%
+  l=0, Dz/zR=1.00: target=80.00%
+  l=4, Dz/zR=0.00: target=100.00%
+  l=4, Dz/zR=0.25: target=92.54%
+  l=4, Dz/zR=0.50: target=73.85%
+  l=4, Dz/zR=1.00: target=32.77%
+  l=8, Dz/zR=0.00: target=100.00%
+  l=8, Dz/zR=0.25: target=86.98%
+  l=8, Dz/zR=0.50: target=57.95%
+  l=8, Dz/zR=1.00: target=13.42%
+
+Takeaway:
+  1. Keeping the same w0 preserves perfect ideal coupling for every l when the input mode is already a pure LG_{0}^{l}.
+  2. Shrinking w0 by 1/sqrt(|l|+1) keeps an l-dependent spot-size proxy fixed, but it destroys q matching to the cavity family.
+  3. The current thesis formula that only keeps ((1-eta^2)/(1+eta^2))^2 captures mismatch scaling at best, not the exact p=1 projection.

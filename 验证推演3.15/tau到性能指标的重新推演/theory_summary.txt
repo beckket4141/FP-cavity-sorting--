@@ -1,0 +1,13 @@
+Tau kernel -> theory probability matrix summary
+finesse = 31.350000
+L_mm = 10.250000
+R_mm = 25.000000
+k = 0.2211951117
+l_range = 0..8
+s_min = 0.105975558257
+tau_eff = 3.322333751365
+eta_sort = 94.520405%
+e_sort = 5.479595%
+mutual_information_bits = 2.738164
+diag_range_percent = 94.473170% .. 94.784368%
+column_sums = lock_l=0:1.000000000000, lock_l=1:1.000000000000, lock_l=2:1.000000000000, lock_l=3:1.000000000000, lock_l=4:1.000000000000, lock_l=5:1.000000000000, lock_l=6:1.000000000000, lock_l=7:1.000000000000, lock_l=8:1.000000000000

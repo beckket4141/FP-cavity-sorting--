@@ -1,0 +1,386 @@
+# 稳定双镜法布里-珀罗腔中拉盖尔-高斯模式分束的统一设计框架及误差机理
+
+## 摘要
+
+法布里-珀罗（Fabry-Perot, FP）腔可利用 Gouy 相位依赖共振实现拉盖尔-高斯（Laguerre-Gaussian, LG）模式的保态频谱分束。稳定各向同性 FP 腔的横模共振位置由横模阶数 $N=2p+|l|+1$ 决定，单腔频谱响应对应按 $N$ 的模式组选通。本文以有效归一化 Gouy 步长 $k_{\mathrm{eff}}$ 为统一参数，给出稳定双镜 FP 腔中的折叠谱设计方法，并推导平凹腔、对称双凹腔和一般稳定两镜腔的几何回代关系。对于连续模式组 $S_M=\{1,2,\ldots,M\}$，最优排布满足 $k^\*=m/M$ 且 $\gcd(m,M)=1$，最小圆周间距为 $s_{\min}=1/M$，其层级结构可由 Farey 邻分数骨架组织。在此基础上，周期 Airy 透射函数给出有限维串扰求和、条件概率、分选成功率 $\eta_{\mathrm{sort}}$、串扰指标 $ER_{\mathrm{sum}}$ 以及容量边界。以 $M=9$、$F=32.21$、$k=2/9$ 为例，理论计算得到 $\eta_{\mathrm{sort}}=94.1166\%$，平均 $ER_{\mathrm{sum}}=12.0404\,\mathrm{dB}$。OAM 连续序列对应 $p=0$、单符号 $l$ 的特例；单个各向同性 FP 腔不区分 $+l$ 与 $-l$，实验频谱中的径向寄生峰可由相同 $N$ 模式简并解释。
+
+**关键词**：法布里-珀罗腔；拉盖尔-高斯模式；Gouy 相位；模式分束；Airy 透射；径向寄生
+
+---
+
+## 1 引言
+
+携带轨道角动量（orbital angular momentum, OAM）的拉盖尔-高斯模式为高维光通信、空间模式复用与量子信息处理提供了重要自由度[1-6]。在这类应用中，输出端既要区分不同空间模式，也常常需要保留输入横向场的振幅与相位结构，以便继续进行干涉、路由或级联处理。现有模式分束技术包括坐标变换、多平面光转换、干涉级联和衍射光学设计等[7-11]。这些方法在模式判别和容量扩展方面已经得到广泛应用；对部分量子逻辑、相干路由和模块化空间模式处理任务而言，保态分束仍是一个独立需求[12]。
+
+FP 腔为保态模式选择提供了频谱路径。稳定腔中横模共振频率由 Gouy 相位决定[13-14]，不同横向模式可在频域中被选择性透射，理想情况下横向场分布不被改变。近年来，基于可调 FP 谐振器和薄膜 FP 滤波器的 OAM 或模式组选择已有实验展示[15-17]，表明 FP 腔可以作为空间模式频谱器件。现有研究多围绕具体器件或少数模式任务展开；面向给定目标模式集，尤其是高维连续模式组时，仍需把腔型选择、容量边界和几何鲁棒性放在同一套设计变量下处理。
+
+在稳定各向同性 FP 腔中，横模共振频率的基本变量是横模阶数
+
+$$
+N=2p+|l|+1 .
+$$
+
+同一 $N$ 下的不同模式（例如不同的 $p$ 和 $l$ 组合，以及 $+l$ 与 $-l$）在理想频谱位置上简并。单个各向同性 FP 腔因而按 $N$ 对模式成组响应。LG 模式分束或 OAM 分选在单腔中表现为按横模阶数的模式组选通；决定分束排布的是单自由光谱范围（free spectral range, FSR）内不同横模共振位置的相对间隔，而不是某一类腔型的名称。将不同稳定双镜腔映射到有效 Gouy 步长后，平凹腔、对称双凹腔和一般稳定两镜腔可用同一折叠谱描述；腔型差异则体现在有效步长到几何参数的回代关系，以及由此产生的工程鲁棒性排序。
+
+围绕这一问题，本文以有效归一化 Gouy 步长 $k_{\mathrm{eff}}$ 描述折叠谱排布，并把选定的 $k_{\mathrm{eff}}$ 回代到平凹腔、对称双凹腔和一般稳定两镜腔的几何参数。连续模式组的排布优化由最小圆周间距给出，解析最优分支可写成 $k=m/M$，对应的层级结构用 Farey 邻分数骨架说明。有限线宽效应进一步通过周期 Airy 透射函数转化为有限维串扰求和和条件概率，从而得到分选成功率、串扰抑制指标、容量边界和大维度极限。OAM 序列作为 $p=0$、单符号 $l$ 的特例处理，径向寄生峰则由轴对称失配和相同 $N$ 简并给出解释。
+
+---
+
+## 2 稳定双镜 FP 腔的 Gouy 相位折叠谱框架
+
+### 2.1 横模阶数与有效 Gouy 步长
+
+稳定双镜 FP 腔中的横模共振频率可写为
+
+$$
+\nu_{q,N}=\mathrm{FSR}\left(q+N k_{\mathrm{eff}}\right),
+$$
+
+其中 $q$ 为纵模指标，$\mathrm{FSR}$ 为自由光谱范围，$N=2p+|l|+1$ 为 LG 模式的横模阶数（$p$ 为径向指标，$l$ 为角向指标），$k_{\mathrm{eff}}$ 为相对于一个自由光谱范围归一化后的有效 Gouy 步长。对一般稳定两镜腔，
+
+$$
+k_{\mathrm{eff}}=\frac{1}{\pi}\arccos\left(\sqrt{g_1g_2}\right),
+$$
+
+其中 $g_1=1-L/R_1$，$g_2=1-L/R_2$，$L$ 为腔长，$R_1$ 与 $R_2$ 为两镜曲率半径。在稳定条件 $0<g_1g_2<1$ 下，横模阶数每增加 1，共振位置在归一化频率上平移 $k_{\mathrm{eff}}$。
+
+将不同纵模折叠到单个自由光谱范围内后，阶数 $N$ 的共振位置由
+
+$$
+x_N=\{N k_{\mathrm{eff}}\}
+$$
+
+给出，其中 $\{\cdot\}$ 表示取模 1 的小数部分。模式分束的几何无关部分由这些折叠位置之间的圆周距离决定。对于给定目标模式组 $S=\{N_1,N_2,\ldots,N_M\}$，最小圆周间距为
+
+$$
+s_{\min}(k_{\mathrm{eff}};S)=
+\min_{i\ne j}\left\|k_{\mathrm{eff}}(N_i-N_j)\right\|,
+$$
+
+其中 $\|x\|$ 表示 $x$ 到最近整数的距离。
+
+上述关系把 FP 模式分束分为两层。折叠谱设计层只依赖 $k_{\mathrm{eff}}$ 与目标模式组之间的算术关系，与具体腔型无关；几何实现层则把选定的 $k_{\mathrm{eff}}$ 回代为 $L/R_i$ 或等价几何参数。图 1 概括了这种双层描述。
+
+### 2.2 平凹腔与对称双凹腔的几何回代
+
+平凹腔对应 $R_1=\infty$、$R_2=R$，此时
+
+$$
+k_{\mathrm{eff}}=\frac{1}{\pi}\arccos\left(\sqrt{1-L/R}\right),
+$$
+
+回代得到
+
+$$
+\frac{L}{R}=\sin^2(\pi k_{\mathrm{eff}}).
+$$
+
+对称双凹腔对应 $R_1=R_2=R$，有
+
+$$
+k_{\mathrm{eff}}=\frac{1}{\pi}\arccos\left(|1-L/R|\right),
+$$
+
+回代得到
+
+$$
+\frac{L}{R}=1\pm\cos(\pi k_{\mathrm{eff}}).
+$$
+
+其中负号分支对应近平面稳定支，正号分支对应近同心稳定支。对称双凹腔不能由平凹腔结果简单作 $L\rightarrow 2L$ 得到。不同腔型可以实现相同的 $k_{\mathrm{eff}}$，因而在折叠谱层具有相同的模式组排布；对应的几何工作点、调节灵敏度和实验鲁棒性则不相同。对于更一般的非对称两镜腔，$k_{\mathrm{eff}}$ 同样由 $\sqrt{g_1g_2}$ 决定，同一 $k_{\mathrm{eff}}$ 在 $(L/R_1, L/R_2)$ 空间中对应一族几何实现。下文以平凹腔和对称双凹腔作为两类代表构型展开讨论。
+
+### 2.3 小几何比极限
+
+在小 $L/R$ 极限下，平凹腔满足
+
+$$
+k_{\mathrm{pc}}\approx \frac{\sqrt{L/R}}{\pi},
+$$
+
+而对称双凹腔满足
+
+$$
+k_{\mathrm{cc}}\approx \frac{\sqrt{2L/R}}{\pi}.
+$$
+
+因此
+
+$$
+\frac{k_{\mathrm{cc}}}{k_{\mathrm{pc}}}\rightarrow \sqrt{2}.
+$$
+
+这一增强因子来源于两类边界条件下腔本征模参数与 Gouy 相位积累方式的共同改变，而非几何程长的简单翻倍。
+
+---
+
+## 3 连续模式组的最小间距景观与最优排布
+
+### 3.1 最小圆周间距与解析最优
+
+考虑连续模式组
+
+$$
+S_M=\{1,2,\ldots,M\}.
+$$
+
+这对应于相邻横模阶数差为 1 的情形，也是实际器件设计中常见的目标集合。任意两个阶数之差覆盖 $1$ 到 $M-1$，折叠谱最小圆周间距可写为仅依赖 $k$ 的单变量函数
+
+$$
+s_{\min}(k)=\min_{1\le q\le M-1}\|qk\|.
+$$
+
+这个表达式给出了连续模式组分选的核心设计指标。若取
+
+$$
+k^\*=\frac{m}{M},\qquad \gcd(m,M)=1,
+$$
+
+则 $q=1,\ldots,M-1$ 时，$qm$ 在模 $M$ 意义下遍历所有非零剩余类，因此最近圆周距离的最小值为
+
+$$
+s_{\min}(k^\*)=\frac{1}{M}.
+$$
+
+将 $M$ 个点放置在圆周上时，最小间距不可能超过 $1/M$。因此 $s_{\min}=1/M$ 是连续模式组的最优值，互素分支 $m/M$ 给出达到该值的一组解析最优设计点。
+
+### 3.2 Farey 骨架与层级细化
+
+函数 $s_{\min}(k)$ 是一组锯齿函数 $\|qk\|$ 的下包络。随着 $M$ 增大，新的差值约束被加入下包络，原有景观不会被抬高，而是在其下方继续形成更细的局部结构。这种层级细化可由 Farey 邻分数骨架进行组织。
+
+在固定 $M$ 下，景观可以按分母不超过 $M-1$ 的 Farey 邻分数区间来划分。设相邻分数为 $a/b<c/d$，局部峰值的位置由二者的 mediant $(a+c)/(b+d)$ 决定，峰高由相邻分母之和控制。由此得到的局部峰一般呈现偏斜帐篷形结构。图 2 展示了 $s_{\min}(k)$ 景观及其中的解析最优分支。这种结构不是严格意义上的自相似分形，而是在 Farey 骨架约束下的层级细化；更大的目标集不会推翻原有粗轮廓，而是在其下方继续加入算术约束。
+
+上述讨论只涉及几何间距。有限线宽下的串扰性能和容量边界还需引入腔的频谱响应函数。
+
+---
+
+## 4 Airy 透射下的有限维串扰、性能指标与容量边界
+
+### 4.1 Airy 透射函数与有限维串扰
+
+最小间距 $s_{\min}$ 描述折叠谱中不同模式组的几何分离程度。实际 FP 腔的透射峰具有有限线宽，圆周距离需要转化为频谱串扰响应。这里采用周期 Airy 透射函数作为主响应模型。对于归一化频率偏移 $\Delta$（以 FSR 为单位），透射响应为
+
+$$
+A_F(\Delta)=
+\frac{1}{1+\left(\dfrac{2F}{\pi}\right)^2
+\sin^2(\pi\Delta)},
+$$
+
+其中 $F$ 为腔精细度。响应以 1 个 FSR 为周期，并在 $\Delta=0$ 处取最大值 1。
+
+对目标模式组 $S=\{N_1,\ldots,N_M\}$，当第 $j$ 个通道被调至透射中心时，第 $i$ 个通道的相对失谐为
+
+$$
+\Delta_{ij}=\left\|k_{\mathrm{eff}}(N_i-N_j)\right\|.
+$$
+
+将所有通道对的失谐代入 Airy 函数，得到有限维响应
+
+$$
+R_{ij}=A_F(\Delta_{ij}).
+$$
+
+将 $R_{ij}$ 排成表格或热图可以直观展示串扰结构。它只是有限维计算的组织方式，不引入新的物理对象。相同 $k_{\mathrm{eff}}$、相同 $F$ 和相同目标模式组给出相同的 $R_{ij}$，与采用平凹腔或对称双凹腔无关。
+
+对每个输入通道做列归一化，得到条件概率矩阵
+
+$$
+P(i|j)=\frac{R_{ij}}{\sum_{i=1}^{M}R_{ij}},
+$$
+
+其中 $P(i|j)$ 表示目标通道为 $j$ 时，被判入输出通道 $i$ 的概率。理想分选要求对角元接近 1，非对角元接近 0。
+
+### 4.2 性能指标、容量边界与大 $M$ 极限
+
+基于条件概率矩阵，定义平均分选成功率
+
+$$
+\eta_{\mathrm{sort}}=\frac{1}{M}\sum_{j=1}^{M}P(j|j),
+$$
+
+以及每通道串扰抑制比
+
+$$
+ER_j=10\log_{10}
+\frac{P(j|j)}{\sum_{i\ne j}P(i|j)},
+$$
+
+对全部通道取平均得到
+
+$$
+ER_{\mathrm{sum}}=\frac{1}{M}\sum_{j=1}^{M}ER_j.
+$$
+
+这两个指标把折叠谱排布、腔精细度和目标模式组转化为可量化的分选质量评价。
+
+对于连续模式组 $S_M$ 在最优分支 $k^\*=m/M$ 下，各通道完全等价——每个通道面对的是同一组失谐 $\{r/M\}$（$r=1,\ldots,M-1$），仅排列次序不同。对任意通道 $j$，非目标通道的泄漏和为
+
+$$
+\epsilon_M=\sum_{r=1}^{M-1}
+\frac{1}{1+\left(\dfrac{2F}{\pi}\right)^2
+\sin^2(\pi r/M)}.
+$$
+
+由于各行（列）的归一化因子均为 $1+\epsilon_M$，有
+
+$$
+P(j|j)=\frac{1}{1+\epsilon_M},
+\qquad
+\eta_{\mathrm{sort}}=\frac{1}{1+\epsilon_M},
+\qquad
+ER_{\mathrm{sum}}=10\log_{10}\frac{1}{\epsilon_M},
+$$
+
+在上述有限目标集合、均匀先验和周期 Airy 响应归一化定义下，三项均精确成立。随着 $M$ 增大，$s_{\min}=1/M$ 减小，需在给定精细度下评估可达到的分选质量。
+
+为此引入容量条件。设相邻通道的最小线宽归一化间距为
+
+$$
+\tau_{\min}=F s_{\min}.
+$$
+
+给定阈值 $\tau_0$（物理上对应可接受的最小通道间隔，以线宽为单位），要求 $\tau_{\min}\ge\tau_0$。代入 $s_{\min}=1/M$，得到连续模式组的容量边界
+
+$$
+M\le \left\lfloor \frac{F}{\tau_0}\right\rfloor .
+$$
+
+这一边界把折叠谱间距和 Airy 线宽联系起来，不依赖特定腔型。在边界标度 $F=\tau_0 M$ 下取 $M\to\infty$，有限维求和过渡为大 $M$ 极限
+
+$$
+\epsilon_\infty = 2\sum_{r=1}^{\infty}
+\frac{1}{1+(2\tau_0 r)^2}.
+$$
+
+取 $\tau_0=3$，数值计算得到 $\eta_{\mathrm{sort}}\approx91.7635\%$，$ER_{\mathrm{sum}}\approx10.4693\,\mathrm{dB}$。这一极限给出了给定阈值标度下连续模式组的渐近分选性能。
+
+以 $M=9$ 连续模式组为具体算例，取互素分支 $k=2/9$，最优间距 $s_{\min}=1/9$。当腔精细度 $F=32.21$ 时，$\tau_{\min}=F s_{\min}\approx3.58$，满足 $\tau_0=3$ 的阈值要求。有限维 Airy 计算给出
+
+$$
+\eta_{\mathrm{sort}}=94.1166\%,\qquad
+ER_{\mathrm{sum}}=12.0404\,\mathrm{dB}.
+$$
+
+图 3 给出了该算例的 Airy 串扰热图与条件概率分布。表 1 列出了 $\tau_0=3$ 下不同 $M$ 的连续模式组设计蓝图及对应性能指标，供器件设计参考。
+
+### 4.3 构型回代与鲁棒性排序
+
+串扰指标和容量边界均在折叠谱设计层获得，与腔型无关。进入几何实现层后，$k_{\mathrm{eff}}$ 到几何参数的映射会改变实际工作点的选择。对于 $M=9$ 连续模式组，$m=1,2,4$ 三条互素分支均能达到理论最优间距 $s_{\min}=1/9$。在平凹腔中，它们分别对应 $L/R\approx0.117$、$0.413$ 和 $0.970$。由于 $L/R$ 的调节灵敏度在中间区域最低，$m=2$ 分支成为平凹腔中较鲁棒的代表支。在对称双凹腔中，近平面支和近同心支分别由 $L/R=1\mp\cos(\pi k)$ 给出，低灵敏度区域转移至共焦条件 $L/R=1$ 附近，因而 $m=4$ 分支具有更好的抗扰动能力。图 4 比较了两种腔型的几何映射及 $M=9$ 鲁棒分支排序。相同 $k_{\mathrm{eff}}$ 下串扰性能相同，几何鲁棒性排序则需按腔型重新计算。
+
+---
+
+## 5 OAM 序列、径向寄生与卫星峰来源
+
+### 5.1 OAM 序列作为横模阶数的特例
+
+若目标模式限制在 $p=0$ 且只取单符号 $l$ 序列（例如 $l=1,2,\ldots$），则
+
+$$
+N=|l|+1.
+$$
+
+此时 OAM 连续序列映射为连续模式组 $S_M$，第 3–4 节的排布优化和 Airy 串扰分析可直接沿用。这一情形是横模阶数响应的一个物理特例。
+
+稳定各向同性 FP 腔的共振频率依赖 $|l|$ 而非 $l$ 的符号，单个腔不能将 $+l$ 与 $-l$ 分配到不同频谱通道。若实验任务需要区分符号，则需引入破坏圆对称性的附加元件、像散或各向异性模式变换，或干涉式模式转换等外部机制。这里讨论的单腔频谱分束对应按 $N$ 的模式组选通能力。
+
+### 5.2 轴对称失配与径向泄漏
+
+当入射场保持绕腔轴的圆对称形式
+
+$$
+E_{\mathrm{in}}(r,\phi)=f(r)\exp(il\phi),
+$$
+
+其对腔模基 $LG_p^{l'}$ 的投影在角向积分后满足 $l'=l$。因此，束腰大小失配、束腰位置偏差、波前曲率失配以及以腔轴为中心的圆对称截断，主要改变同一 $l$ 子空间内的径向展开系数，在理想条件下不引入不同 $l$ 之间的混合。
+
+对于仅含束腰大小失配的典型情形，设入射场为 $LG_0^l$，$\eta=w_{\mathrm{in}}/w_0$ 为束腰比，则同一 $l$ 子空间内的径向展开权重为
+
+$$
+|c_{p,l}|^2=
+\binom{p+|l|}{p}
+\left(\frac{2\eta}{1+\eta^2}\right)^{2|l|+2}
+\left(\frac{1-\eta^2}{1+\eta^2}\right)^{2p}.
+$$
+
+每增加一个径向阶，权重额外乘以失配小参数 $s=(1-\eta^2)/(1+\eta^2)$ 的平方因子。因此，在轻微失配下，$p=1$ 是首要可观测寄生项，更高 $p$ 项按更高阶幂次迅速衰减。以 $|l|=8$、$\eta=0.95$ 为例，$p=1$ 的功率权重约为 $2.308\%$，而 $p\ge2$ 的总权重保持在更低水平。横向偏移、相位倾斜、像散和偏心截断等破坏圆对称的误差会将 $\exp(il\phi)$ 耦合到多个 $l+m$ 分量中，从而抬升 other-$l$ 混模水平。
+
+### 5.3 相同横模阶数简并与卫星峰
+
+在稳定各向同性 FP 腔中，横模共振位置由 $N=2p+|l|+1$ 决定。因此，即使输入端名义上制备的是 $LG_0^l$，只要其相对于腔本征模基存在少量 $LG_1^l$ 或更高 $p$ 的分量，这些分量在扫频过程中也会在对应的 $N$ 共振位置透射出来，形成卫星峰。以 $LG_0^4$ 为例，其横模阶数为 $N=5$。若存在少量 $LG_1^4$ 寄生分量，其阶数为
+
+$$
+N=2\times1+|4|+1=7,
+$$
+
+而 $LG_0^6$ 同样具有 $N=2\times0+|6|+1=7$。因此，频谱中出现在 $LG_0^6$ 共振位置附近的弱峰，可由 $LG_1^4$ 径向寄生分量被腔选择性透射来解释，而不必将其理解为角向指数真正从 $l=4$ 转换成了 $l=6$。图 5 展示了轴对称束腰失配下的径向泄漏分布以及卫星峰的 $N$ 简并来源。
+
+这一解释与第 2–4 节的折叠谱描述一致：折叠谱设计决定不同 $N$ 在单 FSR 内的共振排布，Airy 串扰分析给出有限线宽下的通道泄漏水平，空间模式匹配误差则决定各 $N$ 位置上实际可被腔选出的权重。主峰位置、容量边界与寄生卫星峰由此处在同一物理图像中。
+
+---
+
+## 6 结论
+
+本文以有效归一化 Gouy 步长 $k_{\mathrm{eff}}$ 描述稳定双镜 FP 腔中的 LG 模式分束。单 FSR 内的模式组排布、最小间距和容量条件由 $k_{\mathrm{eff}}$ 控制；平凹腔和对称双凹腔的差异体现在 $k_{\mathrm{eff}}$ 到 $L/R$ 的回代关系以及相应的鲁棒性排序上。小几何比极限下，对称双凹腔相对于平凹腔的步长增强因子为 $\sqrt{2}$，这一结果来自两类边界条件下腔本征模参数与 Gouy 相位积累方式的共同改变。
+
+对于连续模式组 $S_M$，解析最优分支为 $k^\*=m/M$（$\gcd(m,M)=1$），对应最优间距 $s_{\min}=1/M$。最小间距景观可由 Farey 邻分数骨架组织，目标模式数增加时，高阶差值约束在既有粗轮廓下方继续细化。引入周期 Airy 透射函数后，有限维串扰求和给出条件概率矩阵、分选成功率 $\eta_{\mathrm{sort}}$ 和串扰指标 $ER_{\mathrm{sum}}$，并推出容量边界 $M\le\lfloor F/\tau_0\rfloor$。以 $M=9$、$F=32.21$、$k=2/9$ 为例，理论值为 $\eta_{\mathrm{sort}}=94.1166\%$、$ER_{\mathrm{sum}}=12.0404\,\mathrm{dB}$；在 $\tau_0=3$ 边界标度下，大 $M$ 极限值为 $\eta_{\mathrm{sort}}\approx91.7635\%$、$ER_{\mathrm{sum}}\approx10.4693\,\mathrm{dB}$。
+
+OAM 连续序列对应 $p=0$、单符号 $l$ 的特例。单个各向同性 FP 腔按 $N$ 对模式成组响应，不能单独区分 $+l$ 与 $-l$。轴对称模式失配主要激发同一 $l$ 子空间内的径向高阶分量，其中 $p=1$ 是首要可观测寄生项；破坏圆对称的误差则会引入角向混模。卫星峰可由径向寄生项与目标模式共享同一 $N$ 的简并关系解释。由此，Gouy 相位折叠谱、Airy 串扰、腔型回代和空间模式误差共同给出稳定双镜 FP 腔中 LG 模式分束的设计依据。
+
+
+## 图题
+
+**图 1** 稳定双镜 FP 腔中 LG 模式分束的统一折叠谱框架。
+
+**Fig. 1** Unified folded-spectrum framework for LG mode sorting in stable two-mirror FP cavities.
+
+**图 2** 连续模式组的最小间距景观与解析最优分支。
+
+**Fig. 2** Minimum-spacing landscape and analytic optimal branches for consecutive mode groups.
+
+**图 3** $M=9$ 连续模式组的 Airy 串扰热图与条件概率分布。
+
+**Fig. 3** Airy crosstalk maps and conditional probabilities for a consecutive mode group with $M=9$.
+
+**图 4** 平凹腔与对称双凹腔的几何实现及 $M=9$ 鲁棒分支比较。
+
+**Fig. 4** Geometry realization and robust-branch comparison between plane-concave and symmetric double-concave cavities for $M=9$.
+
+**图 5** 径向寄生分量与卫星峰来源。
+
+**Fig. 5** Radial parasitic components and the origin of satellite peaks.
+
+
+## 参考文献
+
+[1] Allen L, Beijersbergen M W, Spreeuw R J C, et al. Orbital angular momentum of light and the transformation of Laguerre-Gaussian laser modes[J]. Physical Review A, 1992, 45(11): 8185-8189.
+
+[2] Shen Y, Wang X, Xie Z, et al. Optical vortices 30 years on: OAM manipulation from topological charge to multiple singularities[J]. Light: Science & Applications, 2019, 8: 90.
+
+[3] Gibson G, Courtial J, Padgett M J, et al. Free-space information transfer using light beams carrying orbital angular momentum[J]. Optics Express, 2004, 12(22): 5448-5456.
+
+[4] Wang J, Yang J Y, Fazal I M, et al. Terabit free-space data transmission employing orbital angular momentum multiplexing[J]. Nature Photonics, 2012, 6(7): 488-496.
+
+[5] Bozinovic N, Yue Y, Ren Y, et al. Terabit-scale orbital angular momentum mode division multiplexing in fibers[J]. Science, 2013, 340(6140): 1545-1548.
+
+[6] Erhard M, Krenn M, Zeilinger A. Advances in high-dimensional quantum entanglement[J]. Nature Reviews Physics, 2020, 2(7): 365-381.
+
+[7] Leach J, Padgett M J, Barnett S M, et al. Measuring the orbital angular momentum of a single photon[J]. Physical Review Letters, 2002, 88(25): 257901.
+
+[8] Berkhout G C G, Lavery M P J, Courtial J, et al. Efficient sorting of orbital angular momentum states of light[J]. Physical Review Letters, 2010, 105(15): 153601.
+
+[9] Mirhosseini M, Malik M, Shi Z, et al. Efficient separation of the orbital angular momentum eigenstates of light[J]. Nature Communications, 2013, 4: 2781.
+
+[10] Labroille G, Denolle B, Jian P, et al. Efficient and mode selective spatial mode multiplexer based on multi-plane light conversion[J]. Optics Express, 2014, 22(13): 15599-15607.
+
+[11] Fontaine N K, Ryf R, Chen H, et al. Laguerre-Gaussian mode sorter[J]. Nature Communications, 2019, 10: 1865.
+
+[12] Brandt F, Hiekkamaki M, Bouchard F, et al. High-dimensional quantum gates using full-field spatial modes of photons[J]. Optica, 2020, 7(2): 98-107.
+
+[13] Kogelnik H, Li T. Laser beams and resonators[J]. Applied Optics, 1966, 5(10): 1550-1567.
+
+[14] Siegman A E. Lasers[M]. Sausalito: University Science Books, 1986.
+
+[15] Wei S, Earl S K, Lin J, et al. Active sorting of orbital angular momentum states of light with a cascaded tunable resonator[J]. Light: Science & Applications, 2020, 9: 10.
+
+[16] Vanani F G, Fardoost A, Zhang Y, et al. Low-crosstalk mode-group demultiplexers based on Fabry-Perot thin-film filters[J]. Optics Express, 2022, 30(22): 39258-39268.
+
+[17] Yang Y F, Chen M Y, Li F P, et al. Scalable cyclic transformation of orbital angular momentum modes based on a nonreciprocal Mach-Zehnder interferometer[J]. Photonics Research, 2024, 12(10): 2249-2256.

@@ -1,0 +1,7 @@
+{
+  "main_scope": "Use N as the primary sorting variable; p=0 single-sign OAM is a special consecutive-N case.",
+  "signed_OAM_boundary": "An isotropic FP cavity depends on N=2p+|l|+1 and cannot distinguish +l from -l by itself.",
+  "radial_error_boundary": "Axisymmetric waist mismatch preserves l and redistributes power over p.",
+  "p1_power_abs_l8_eta095": 0.02308464759704709,
+  "satellite_peak_rule": "LG_p^l shares resonance with any mode of the same N=2p+|l|+1."
+}

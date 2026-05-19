@@ -1,0 +1,213 @@
+\section{从平凹腔到一般两镜 FP 腔的统一写法}
+
+现有正文采用的是平凹腔写法：将镜面到镜面的单程 Gouy 相移记为 $\phi$，并把归一化步长定义为 $k=\phi/\pi$。这一写法在平凹腔中完全成立，但若要推广到更一般的双凹或任意两镜稳定 FP 腔，更稳妥的做法是先把几何无关的频谱折叠框架与几何相关的 $k$--参数映射分开。
+
+\subsection{一般两镜稳定腔的横模共振}
+
+考虑由两面球面镜构成的稳定 FP 腔，腔长为 $L$，镜面曲率半径分别为 $R_1$ 与 $R_2$。定义
+\begin{equation}
+g_1 = 1-\frac{L}{R_1},
+\qquad
+g_2 = 1-\frac{L}{R_2},
+\label{eq:gen_fp_g_params}
+\end{equation}
+稳定条件为
+\begin{equation}
+0<g_1 g_2<1.
+\label{eq:gen_fp_stability}
+\end{equation}
+
+对任意稳定两镜腔，横模共振频率可统一写为
+\begin{equation}
+\nu_{q,N}
+=\mathrm{FSR}\!\left(
+q+N\frac{\eta}{\pi}
+\right),
+\qquad
+\eta=\arccos\!\bigl(\sigma\sqrt{g_1 g_2}\bigr),
+\label{eq:gen_fp_resonance}
+\end{equation}
+其中 $N=2p+|l|+1$ 为横模总阶数，$\sigma=\pm1$ 用于区分两条稳定支：近平面支取 $\sigma=+1$，近同心支取 $\sigma=-1$。式~(\ref{eq:gen_fp_resonance}) 表明，真正进入共振频率公式的是两镜腔本征模对应的横模相位参数 $\eta$，而不是平凹腔中特有的几何比 $L/R$ 本身。
+
+在本文的频谱折叠设计框架中，真正决定圆周排布与最小间距的是模 $1$ 的共振位置相对于模 $0$ 的单 FSR 归一化位移。由于 $k$ 与 $1-k$ 只对应圆周上的整体反向编号，二者给出的任意两点弧长完全相同，因此可定义与分支无关的有效步长
+\begin{equation}
+k_{\mathrm{eff}}
+\equiv
+\min\!\left(\frac{\eta}{\pi},\,1-\frac{\eta}{\pi}\right)
+=
+\frac{1}{\pi}\arccos\!\bigl(\sqrt{g_1 g_2}\bigr),
+\label{eq:gen_fp_keff}
+\end{equation}
+它恒满足 $k_{\mathrm{eff}}\in(0,1/2)$，并且与正文中的平凹腔定义完全兼容。于是，单 FSR 内的折叠位置仍可写为
+\begin{equation}
+\mathrm{pos}(N)=\bigl(Nk_{\mathrm{eff}}\bigr)\bmod 1,
+\label{eq:gen_fp_pos}
+\end{equation}
+或者以基模为原点写成
+\begin{equation}
+\mathrm{pos}(N)=\bigl((N-1)k_{\mathrm{eff}}\bigr)\bmod 1.
+\label{eq:gen_fp_pos_shifted}
+\end{equation}
+
+由此可见，正文中依赖 $\mathrm{pos}(N)$ 的全部后续结论，包括两点弧长 $s_{ij}$、最小间距 $s_{\min}$、线宽归一化分离度 $\tau_{ij}=\mathcal{F}s_{ij}$、Airy 串扰求和以及容量界
+\begin{equation}
+M\le \left\lfloor \frac{\mathcal{F}}{\tau_0}\right\rfloor
+\label{eq:gen_fp_capacity}
+\end{equation}
+都不需要改写。需要改写的只有最前端的几何映射：对于不同腔型，$k_{\mathrm{eff}}$ 如何由几何参数给出。
+
+\subsection{平凹腔是一般公式的一个极限}
+
+当 $R_1=\infty$、$R_2=R$ 时，
+\begin{equation}
+g_1=1,
+\qquad
+g_2=1-\frac{L}{R},
+\end{equation}
+式~(\ref{eq:gen_fp_keff}) 立即化为
+\begin{equation}
+k_{\mathrm{eff}}
+=
+\frac{1}{\pi}\arccos\!\left(\sqrt{1-\frac{L}{R}}\right),
+\label{eq:gen_fp_plane_concave}
+\end{equation}
+这正是正文中平凹腔的公式。进一步反求几何比，可得
+\begin{equation}
+\frac{L}{R}=\sin^2(\pi k_{\mathrm{eff}}).
+\label{eq:gen_fp_plane_concave_inverse}
+\end{equation}
+
+\subsection{对称双凹腔的有效步长与几何反求}
+
+对称双凹腔满足 $R_1=R_2=R$，于是
+\begin{equation}
+g_1=g_2=1-\frac{L}{R}.
+\end{equation}
+代入式~(\ref{eq:gen_fp_keff}) 得
+\begin{equation}
+k_{\mathrm{eff}}
+=
+\frac{1}{\pi}\arccos\!\left(\left|1-\frac{L}{R}\right|\right).
+\label{eq:gen_fp_symmetric_keff}
+\end{equation}
+因此，对称双凹腔的几何反求关系不是平凹腔结果乘一个常数，而是
+\begin{equation}
+\frac{L}{R}=1\pm \cos(\pi k_{\mathrm{eff}}).
+\label{eq:gen_fp_symmetric_inverse}
+\end{equation}
+其中负号对应近平面支 $0<L/R<1$，正号对应近同心支 $1<L/R<2$。若只关心单 FSR 内的圆周间距设计，则这两支通过 $k\leftrightarrow 1-k$ 完全等价；若要写物理频率公式，则应回到式~(\ref{eq:gen_fp_resonance}) 中按照具体分支选取 $\sigma$。
+
+\subsection{为什么不能把平凹腔简单替换为 \texorpdfstring{$L\to 2L$}{L to 2L}}
+
+“双凹腔的 Gouy 相移等于平凹腔把传播长度乘 2”这一想法有一定直观基础，因为双凹腔的一程传播确实包含了束腰两侧的两段 Gouy 积累。但这一推理缺少关键一步：腔的本征高斯模会随几何边界条件一同改变，束腰位置与瑞利长度不能沿用平凹腔的表达式。
+
+平凹腔中，镜到镜单程 Gouy 相移为
+\begin{equation}
+\phi_{\mathrm{pc}}
+=
+\arctan\!\left(\frac{L}{z_R}\right)
+=
+\arccos\!\left(\sqrt{1-\frac{L}{R}}\right),
+\qquad
+z_R=\sqrt{L(R-L)}.
+\label{eq:gen_fp_phi_pc}
+\end{equation}
+而在对称双凹腔中，束腰位于腔中心，半腔长为 $L/2$，本征模瑞利长度变为
+\begin{equation}
+z_R=\frac{1}{2}\sqrt{L(2R-L)}.
+\label{eq:gen_fp_zr_cc}
+\end{equation}
+因此，一程镜到镜的 Gouy 相移应写为
+\begin{equation}
+\phi_{\mathrm{cc}}
+=
+2\arctan\!\left(\frac{L/2}{z_R}\right)
+=
+\arccos\!\left(1-\frac{L}{R}\right)
+\qquad (0<L<R),
+\label{eq:gen_fp_phi_cc}
+\end{equation}
+它并不等于 $2\phi_{\mathrm{pc}}$。换言之，双凹腔确实经历了两段 Gouy 累积，但每一段累积所依赖的本征模参数已经不是平凹腔那一个，因此不能通过“把平凹腔里的 $L$ 换成 $2L$”来完成推广。
+
+这一点在小几何比极限下看得更清楚。令 $\rho=L/R\ll1$，则
+\begin{equation}
+k_{\mathrm{pc}}
+=
+\frac{1}{\pi}\arccos\!\sqrt{1-\rho}
+\approx
+\frac{\sqrt{\rho}}{\pi},
+\qquad
+k_{\mathrm{cc}}
+=
+\frac{1}{\pi}\arccos(1-\rho)
+\approx
+\frac{\sqrt{2\rho}}{\pi}
+=
+\sqrt{2}\,k_{\mathrm{pc}}.
+\label{eq:gen_fp_small_rho_compare}
+\end{equation}
+因此，在近轴小腔长极限下，对称双凹腔相对于平凹腔的步长增强因子趋近于 $\sqrt{2}$，而不是 $2$。
+
+\subsection{对一般双凹腔的反求公式}
+
+对一般双凹腔，式~(\ref{eq:gen_fp_keff}) 可改写为
+\begin{equation}
+\left(1-\frac{L}{R_1}\right)\left(1-\frac{L}{R_2}\right)
+=
+\cos^2(\pi k_{\mathrm{eff}}).
+\label{eq:gen_fp_general_inverse_start}
+\end{equation}
+整理后得到关于腔长 $L$ 的二次方程
+\begin{equation}
+L^2-(R_1+R_2)L+R_1R_2\sin^2(\pi k_{\mathrm{eff}})=0,
+\label{eq:gen_fp_general_quadratic}
+\end{equation}
+从而
+\begin{equation}
+L
+=
+\frac{R_1+R_2\pm
+\sqrt{(R_1+R_2)^2-4R_1R_2\sin^2(\pi k_{\mathrm{eff}})}}{2}.
+\label{eq:gen_fp_general_inverse}
+\end{equation}
+这两根分别对应近平面支与近同心支。平凹腔极限 $R_1\to\infty$ 下，式~(\ref{eq:gen_fp_general_inverse}) 自动退化为式~(\ref{eq:gen_fp_plane_concave_inverse})。
+
+\subsection{对设计结论的直接影响}
+
+对连续满载集 $S_M=\{1,2,\dots,M\}$，最优步长条件
+\begin{equation}
+k_{\mathrm{eff}}^*=\frac{m}{M},
+\qquad
+\gcd(m,M)=1
+\label{eq:gen_fp_kstar}
+\end{equation}
+保持不变。改变的是最优工作点在几何参数空间中的位置：
+\begin{equation}
+\left(\frac{L}{R}\right)^*_{\mathrm{pc}}
+=
+\sin^2\!\left(\frac{\pi m}{M}\right),
+\label{eq:gen_fp_plane_branch}
+\end{equation}
+\begin{equation}
+\left(\frac{L}{R}\right)^*_{\mathrm{cc}}
+=
+1\pm \cos\!\left(\frac{\pi m}{M}\right).
+\label{eq:gen_fp_cc_branch}
+\end{equation}
+因此，若附录希望把正文的设计框架推广到更一般的 FP 腔，一个自然的写法是：正文保留以 $k$ 为中心的统一框架，附录补充说明对于平凹、对称双凹和一般双凹腔，$k$ 与几何参数之间分别由式~(\ref{eq:gen_fp_plane_concave_inverse})、式~(\ref{eq:gen_fp_symmetric_inverse}) 和式~(\ref{eq:gen_fp_general_inverse}) 给出。
+
+还需要指出的是，工程上用于挑选推荐分支的灵敏度函数也会随腔型改变。平凹腔满足
+\begin{equation}
+\left|\frac{dk}{d(L/R)}\right|_{\mathrm{pc}}
+=
+\frac{1}{2\pi\sqrt{(L/R)(1-L/R)}},
+\label{eq:gen_fp_pc_sensitivity}
+\end{equation}
+而对称双凹腔满足
+\begin{equation}
+\left|\frac{dk}{d(L/R)}\right|_{\mathrm{cc}}
+=
+\frac{1}{\pi\sqrt{(L/R)\bigl(2-L/R\bigr)}}.
+\label{eq:gen_fp_cc_sensitivity}
+\end{equation}
+后者在 $L/R=1$（共焦点）附近最鲁棒，因此双凹腔的优选分支不必与平凹腔相同。以正文的 $M=9$ 为例，平凹腔中最稳的代表支为 $m=2$，而对称双凹腔中最靠近共焦点的代表支则转为 $m=4$。这说明推广到更一般腔型时，容量界与最优步长条件可以直接继承，但几何回代和鲁棒性排序需要重新计算，不能只加一个整体系数。

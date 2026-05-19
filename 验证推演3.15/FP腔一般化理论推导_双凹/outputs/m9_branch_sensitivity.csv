@@ -1,0 +1,10 @@
+﻿geometry,branch,m,k_star,rho,abs_dk_d_rho
+plane_concave,single_branch,1,0.111111111111,0.116977778441,0.495202274261
+plane_concave,single_branch,2,0.222222222222,0.413175911167,0.323220329257
+plane_concave,single_branch,4,0.444444444444,0.969846310393,0.930675845840
+symmetric_double_concave,near_planar,1,0.111111111111,0.060307379214,0.930675845840
+symmetric_double_concave,near_planar,2,0.222222222222,0.233955556881,0.495202274261
+symmetric_double_concave,near_planar,4,0.444444444444,0.826351822333,0.323220329257
+symmetric_double_concave,near_concentric,1,0.111111111111,1.939692620786,0.930675845840
+symmetric_double_concave,near_concentric,2,0.222222222222,1.766044443119,0.495202274261
+symmetric_double_concave,near_concentric,4,0.444444444444,1.173648177667,0.323220329257

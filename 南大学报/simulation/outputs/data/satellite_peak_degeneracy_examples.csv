@@ -1,0 +1,13 @@
+﻿component,p,abs_l,N,degenerate_p0_abs_l,interpretation
+LG_p=0_abs_l=2,0,2,3,2,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=1_abs_l=2,1,2,5,4,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=2_abs_l=2,2,2,7,6,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=0_abs_l=4,0,4,5,4,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=1_abs_l=4,1,4,7,6,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=2_abs_l=4,2,4,9,8,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=0_abs_l=6,0,6,7,6,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=1_abs_l=6,1,6,9,8,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=2_abs_l=6,2,6,11,10,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=0_abs_l=8,0,8,9,8,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=1_abs_l=8,1,8,11,10,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.
+LG_p=2_abs_l=8,2,8,13,12,A parasitic radial component appears at the same FP resonance as a p=0 mode with abs(l)=N-1.

@@ -1,0 +1,27 @@
+{
+  "mode_family": "continuous",
+  "M": 9,
+  "tau_0": 3.0,
+  "finesse_budget": 32.317937,
+  "lambda0_nm": 794.974455,
+  "n_medium": 1.453800158,
+  "baseline_cavity": {
+    "L_mm": 10.394442,
+    "R_mm": 25.229978
+  },
+  "target_w0_um_list": [
+    46.5,
+    60.0,
+    80.0,
+    100.0,
+    150.0,
+    200.0,
+    300.0,
+    500.0,
+    1000.0
+  ],
+  "size_limits": {
+    "L_max_mm": null,
+    "R_max_mm": null
+  }
+}

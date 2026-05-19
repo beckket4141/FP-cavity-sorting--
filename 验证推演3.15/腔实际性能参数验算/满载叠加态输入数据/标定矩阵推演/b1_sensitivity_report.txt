@@ -1,0 +1,163 @@
+Appendix B1 trusted-data recomputation report
+data_dir = D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\满载叠加态输入数据\最终数据
+runs = 1, 2, 3
+
+Trusted baseline ER_sum from current triplicate data (mean +/- sd across runs):
+  l=0: 12.015 +/- 0.424 dB
+  l=1: 12.281 +/- 0.164 dB
+  l=2: 12.177 +/- 0.184 dB
+  l=3: 11.577 +/- 0.259 dB
+  l=4: 11.161 +/- 0.262 dB
+  l=5: 11.064 +/- 0.457 dB
+  l=6: 10.767 +/- 0.485 dB
+  l=7: 10.663 +/- 0.407 dB
+  l=8: 10.946 +/- 0.315 dB
+  overall mean = 11.406 dB
+
+Current appendix table detected: D:\自制软件\1.thesis\My_nju_thesis-master\thesis\appendices\app_e5_calibration_robustness.tex
+  appendix l=0: baseline=12.43 dB
+  appendix l=1: baseline=12.65 dB
+  appendix l=2: baseline=12.43 dB
+  appendix l=3: baseline=11.53 dB
+  appendix l=4: baseline=10.89 dB
+  appendix l=5: baseline=11.43 dB
+  appendix l=6: baseline=11.14 dB
+  appendix l=7: baseline=10.97 dB
+  appendix l=8: baseline=12.06 dB
+
+Legacy full-load table detected: D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\_AI_DO_NOT_READ_半成品隔离区\THESIS_THESIS_LEGACY\备份\ch05_fp_design_and_validation旧版.tex
+  appendix-baseline == legacy ER_sum exact match: True
+  conclusion: the current appendix baseline column is copied from the legacy chapter-5 ER_sum table.
+
+Difference between current appendix baseline and trusted triplicate baseline:
+  l=0: appendix=12.43 dB, trusted=12.015 dB, delta=+0.415 dB
+  l=1: appendix=12.65 dB, trusted=12.281 dB, delta=+0.369 dB
+  l=2: appendix=12.43 dB, trusted=12.177 dB, delta=+0.253 dB
+  l=3: appendix=11.53 dB, trusted=11.577 dB, delta=-0.047 dB
+  l=4: appendix=10.89 dB, trusted=11.161 dB, delta=-0.271 dB
+  l=5: appendix=11.43 dB, trusted=11.064 dB, delta=+0.366 dB
+  l=6: appendix=11.14 dB, trusted=10.767 dB, delta=+0.373 dB
+  l=7: appendix=10.97 dB, trusted=10.663 dB, delta=+0.307 dB
+  l=8: appendix=12.06 dB, trusted=10.946 dB, delta=+1.114 dB
+
+Trusted baseline rounded to 0.01 dB (recommended if Appendix B1 is kept):
+  l=0:12.01, l=1:12.28, l=2:12.18, l=3:11.58, l=4:11.16, l=5:11.06, l=6:10.77, l=7:10.66, l=8:10.95
+
+Impurity level = 2.00% of total calibration-column weight
+  mapping = combined_max_offdiag
+    source map: 0->5:1.00; 1->5:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->1:1.00; 7->2:1.00; 8->3:1.00
+    delta summary: mean=+1.466 dB, min=+1.242 dB, max=+1.728 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.552+/-0.584 dB, delta=+1.537 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.008+/-0.280 dB, delta=+1.728 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.895+/-0.325 dB, delta=+1.718 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.155+/-0.371 dB, delta=+1.578 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.686+/-0.482 dB, delta=+1.525 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.410+/-0.606 dB, delta=+1.346 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.038+/-0.651 dB, delta=+1.271 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=11.914+/-0.542 dB, delta=+1.251 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.189+/-0.314 dB, delta=+1.242 dB
+
+  mapping = foldback_single
+    source map: 0->5:1.00; 1->5:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->1:1.00; 7->2:1.00; 8->3:1.00
+    delta summary: mean=+1.466 dB, min=+1.242 dB, max=+1.728 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.552+/-0.584 dB, delta=+1.537 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.008+/-0.280 dB, delta=+1.728 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.895+/-0.325 dB, delta=+1.718 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.155+/-0.371 dB, delta=+1.578 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.686+/-0.482 dB, delta=+1.525 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.410+/-0.606 dB, delta=+1.346 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.038+/-0.651 dB, delta=+1.271 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=11.914+/-0.542 dB, delta=+1.251 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.189+/-0.314 dB, delta=+1.242 dB
+
+  mapping = foldback_split
+    source map: 0->4:0.50, 5:0.50; 1->5:0.50, 6:0.50; 2->6:0.50, 7:0.50; 3->7:0.50, 8:0.50; 4->8:0.50, 0:0.50; 5->0:0.50, 1:0.50; 6->1:0.50, 2:0.50; 7->2:0.50, 3:0.50; 8->3:0.50, 4:0.50
+    delta summary: mean=+1.540 dB, min=+1.247 dB, max=+1.936 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.800+/-0.620 dB, delta=+1.785 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.217+/-0.244 dB, delta=+1.936 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=14.057+/-0.275 dB, delta=+1.880 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.149+/-0.367 dB, delta=+1.573 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.625+/-0.437 dB, delta=+1.464 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.430+/-0.608 dB, delta=+1.366 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.035+/-0.645 dB, delta=+1.268 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=11.910+/-0.536 dB, delta=+1.247 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.286+/-0.427 dB, delta=+1.340 dB
+
+  mapping = legacy_single
+    source map: 0->5:1.00; 1->6:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->2:1.00; 7->2:1.00; 8->4:1.00
+    delta summary: mean=+1.462 dB, min=+1.240 dB, max=+1.745 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.561+/-0.582 dB, delta=+1.546 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.002+/-0.434 dB, delta=+1.721 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.922+/-0.337 dB, delta=+1.745 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.177+/-0.368 dB, delta=+1.600 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.584+/-0.359 dB, delta=+1.423 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.445+/-0.608 dB, delta=+1.381 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.008+/-0.646 dB, delta=+1.240 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=11.914+/-0.542 dB, delta=+1.251 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.196+/-0.474 dB, delta=+1.250 dB
+
+Impurity level = 2.44% of total calibration-column weight
+  mapping = combined_max_offdiag
+    source map: 0->5:1.00; 1->5:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->1:1.00; 7->2:1.00; 8->3:1.00
+    delta summary: mean=+1.656 dB, min=+1.365 dB, max=+1.832 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.614+/-0.594 dB, delta=+1.599 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.081+/-0.286 dB, delta=+1.800 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.955+/-0.344 dB, delta=+1.779 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.409+/-0.254 dB, delta=+1.832 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.902+/-0.322 dB, delta=+1.741 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.708+/-0.577 dB, delta=+1.644 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.326+/-0.622 dB, delta=+1.559 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=12.249+/-0.576 dB, delta=+1.585 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.312+/-0.148 dB, delta=+1.365 dB
+
+  mapping = foldback_single
+    source map: 0->5:1.00; 1->5:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->1:1.00; 7->2:1.00; 8->3:1.00
+    delta summary: mean=+1.656 dB, min=+1.365 dB, max=+1.832 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.614+/-0.594 dB, delta=+1.599 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.081+/-0.286 dB, delta=+1.800 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.955+/-0.344 dB, delta=+1.779 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.409+/-0.254 dB, delta=+1.832 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.902+/-0.322 dB, delta=+1.741 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.708+/-0.577 dB, delta=+1.644 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.326+/-0.622 dB, delta=+1.559 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=12.249+/-0.576 dB, delta=+1.585 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.312+/-0.148 dB, delta=+1.365 dB
+
+  mapping = foldback_split
+    source map: 0->4:0.50, 5:0.50; 1->5:0.50, 6:0.50; 2->6:0.50, 7:0.50; 3->7:0.50, 8:0.50; 4->8:0.50, 0:0.50; 5->0:0.50, 1:0.50; 6->1:0.50, 2:0.50; 7->2:0.50, 3:0.50; 8->3:0.50, 4:0.50
+    delta summary: mean=+1.977 dB, min=+1.583 dB, max=+2.518 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=14.324+/-0.693 dB, delta=+2.309 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.799+/-0.277 dB, delta=+2.518 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=14.618+/-0.313 dB, delta=+2.441 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.594+/-0.406 dB, delta=+2.017 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=13.029+/-0.494 dB, delta=+1.868 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.805+/-0.658 dB, delta=+1.741 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.378+/-0.697 dB, delta=+1.611 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=12.246+/-0.577 dB, delta=+1.583 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.654+/-0.465 dB, delta=+1.707 dB
+
+  mapping = legacy_single
+    source map: 0->5:1.00; 1->6:1.00; 2->7:1.00; 3->8:1.00; 4->8:1.00; 5->0:1.00; 6->2:1.00; 7->2:1.00; 8->4:1.00
+    delta summary: mean=+1.655 dB, min=+1.353 dB, max=+1.854 dB
+    l=0: baseline=12.015+/-0.424 dB, perturbed=13.624+/-0.591 dB, delta=+1.609 dB
+    l=1: baseline=12.281+/-0.164 dB, perturbed=14.118+/-0.463 dB, delta=+1.838 dB
+    l=2: baseline=12.177+/-0.184 dB, perturbed=13.989+/-0.358 dB, delta=+1.812 dB
+    l=3: baseline=11.577+/-0.259 dB, perturbed=13.431+/-0.260 dB, delta=+1.854 dB
+    l=4: baseline=11.161+/-0.262 dB, perturbed=12.891+/-0.323 dB, delta=+1.730 dB
+    l=5: baseline=11.064+/-0.457 dB, perturbed=12.751+/-0.578 dB, delta=+1.686 dB
+    l=6: baseline=10.767+/-0.485 dB, perturbed=12.193+/-0.799 dB, delta=+1.426 dB
+    l=7: baseline=10.663+/-0.407 dB, perturbed=12.249+/-0.576 dB, delta=+1.586 dB
+    l=8: baseline=10.946+/-0.315 dB, perturbed=12.299+/-0.596 dB, delta=+1.353 dB
+
+Recommended replacement for Appendix B1 under current trusted-data logic (2.00%, foldback_single):
+l  baseline_mean  baseline_sd  perturbed_mean  perturbed_sd  delta_mean
+0         12.015       0.424          13.552        0.584       1.537
+1         12.281       0.164          14.008        0.280       1.728
+2         12.177       0.184          13.895        0.325       1.718
+3         11.577       0.259          13.155        0.371       1.578
+4         11.161       0.262          12.686        0.482       1.525
+5         11.064       0.457          12.410        0.606       1.346
+6         10.767       0.485          12.038        0.651       1.271
+7         10.663       0.407          11.914        0.542       1.251
+8         10.946       0.315          12.189        0.314       1.242
+

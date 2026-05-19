@@ -1,0 +1,2 @@
+anchor_n_modes,anchor_tau0,finesse_nominal,finesse_measured,finesse_relative_error,rho_nominal,rho_measured,rho_gain,reflectivity_nominal,reflectivity_equivalent_measured,reflectivity_abs_error
+9,3.000000000000,29.800000000000,31.350000000000,0.052013422819,1.103703703704,1.161111111111,1.052013422819,0.899988031457,0.904685047925,0.004697016468

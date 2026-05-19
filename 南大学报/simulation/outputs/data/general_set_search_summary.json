@@ -1,0 +1,37 @@
+{
+  "orders": [
+    1,
+    4,
+    6,
+    10,
+    15,
+    18,
+    22,
+    27,
+    31,
+    37,
+    40,
+    46
+  ],
+  "window": [
+    "1/5",
+    "3/10"
+  ],
+  "D_max": 45,
+  "q_bound": 90,
+  "best_k_fraction": "7/29",
+  "best_k": 0.2413793103448276,
+  "best_s_min": 0.034482758620689655,
+  "limiting_differences": "4,25,33",
+  "plane_concave_L_over_R_if_realized": 0.4729305457072911,
+  "tau_0": 3.0,
+  "F_min": 87.0,
+  "F_eval_used": 87.0,
+  "eta_sort_at_F_eval": 0.9611415257550245,
+  "mean_ER_sum_dB_at_F_eval": 14.445405587001455,
+  "min_ER_sum_dB_at_F_eval": 11.525972203367118,
+  "mutual_information_bits_at_F_eval": 3.2791502004457085,
+  "finite_M_uniform_reference_ER_at_F_min": 18.100427960587098,
+  "finite_M_uniform_reference_eta_at_F_min": 0.9847495383734385,
+  "column_sum_error": 5.551115123125783e-16
+}

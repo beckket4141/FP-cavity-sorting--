@@ -1,0 +1,20 @@
+Chapter-5 comparison summary
+
+Representative shift used from generator model: 0.08 w0
+Effective aperture radius used from generator model: 2.45 mm
+
+Key values (scaled to the experimental l=0 transmittance):
+  l=0: exp=0.9289 +/- 0.0071, Bolduc same=0.9289, Bolduc scaled=0.9289, Yang actual=0.9289, Yang best-fit p0=0.9289
+  l=1: exp=0.9166 +/- 0.0093, Bolduc same=0.9230, Bolduc scaled=0.7262, Yang actual=0.7226, Yang best-fit p0=0.8482
+  l=2: exp=0.9050 +/- 0.0108, Bolduc same=0.9170, Bolduc scaled=0.3832, Yang actual=0.4556, Yang best-fit p0=0.7445
+  l=3: exp=0.8882 +/- 0.0185, Bolduc same=0.9109, Bolduc scaled=0.1505, Yang actual=0.2658, Yang best-fit p0=0.6510
+  l=4: exp=0.8860 +/- 0.0252, Bolduc same=0.9042, Bolduc scaled=0.0469, Yang actual=0.1490, Yang best-fit p0=0.5679
+  l=5: exp=0.8654 +/- 0.0226, Bolduc same=0.8959, Bolduc scaled=0.0121, Yang actual=0.0815, Yang best-fit p0=0.4931
+  l=6: exp=0.8514 +/- 0.0323, Bolduc same=0.8835, Bolduc scaled=0.0027, Yang actual=0.0438, Yang best-fit p0=0.4251
+  l=7: exp=0.8265 +/- 0.0255, Bolduc same=0.8634, Bolduc scaled=0.0005, Yang actual=0.0233, Yang best-fit p0=0.3629
+  l=8: exp=0.8271 +/- 0.0242, Bolduc same=0.8307, Bolduc scaled=0.0001, Yang actual=0.0123, Yang best-fit p0=0.3062
+
+Interpretation:
+  1. The measured high transmission for same w0 aligns with the complex-amplitude same-w0 model, not with the scaled-w0 cavity-matching hypothesis.
+  2. The sharp collapse under scaled w_l follows directly from q mismatch, even before one adds realistic losses.
+  3. The Yang/Sroor scaled basis helps explain phase-only generation purity, but it still does not reproduce the actual cavity-coupling behavior seen in your complex-amplitude experiment.

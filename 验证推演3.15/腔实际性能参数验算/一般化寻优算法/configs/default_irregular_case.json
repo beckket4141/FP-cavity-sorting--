@@ -1,0 +1,40 @@
+{
+  "candidate_modes": [1, 4, 6, 10, 15, 18, 22, 27, 31, 37, 40, 46],
+  "search": {
+    "k_min": 0.01,
+    "k_max": 0.49,
+    "coarse_samples": 6001,
+    "refine_enabled": true,
+    "refine_seed_count": 24,
+    "refine_half_window": 0.002,
+    "refine_samples": 121,
+    "min_seed_spacing": 0.002
+  },
+  "geometry_preference": {
+    "target_L_over_R": 0.5,
+    "hard_tolerance": 0.12
+  },
+  "evaluation": {
+    "tau_0": 3.0,
+    "feasibility_finesse": 32.0,
+    "F_eval": 32.0,
+    "airy_model": "exact_periodic"
+  },
+  "output": {
+    "case_name": "default_irregular_case",
+    "top_solution_details": 8,
+    "max_subsets_per_k": 6,
+    "near_optimal_size_drop": 1,
+    "near_optimal_min_subset_size": 5,
+    "max_near_optimal_subsets_per_k": 120,
+    "export_excel": true
+  },
+  "sort_priorities": [
+    {"key": "subset_size", "direction": "desc"},
+    {"key": "s_min", "direction": "desc"},
+    {"key": "F_min", "direction": "asc"},
+    {"key": "geometry_gap", "direction": "asc"},
+    {"key": "k", "direction": "asc"}
+  ],
+  "notes": "Default irregular example for thesis Section 5.4, using a non-continuous candidate total-order set with N >= 1 and a practical geometry band |L/R-0.5| <= 0.12. feasibility_finesse is the practical budget used to construct the conflict graph; F_eval is used only for physical performance evaluation."
+}

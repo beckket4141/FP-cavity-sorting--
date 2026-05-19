@@ -1,0 +1,27 @@
+Triplicate Full9 De-embedded Aggregation Report
+Generated at: 2026-03-28T18:44:55
+
+Per-run quick stats:
+- Run 1: cond(S)=5.0532, ER_sum mean=11.576 dB, ER_max mean=16.231 dB, diag share mean=93.46%
+- Run 2: cond(S)=4.9916, ER_sum mean=11.517 dB, ER_max mean=16.490 dB, diag share mean=93.35%
+- Run 3: cond(S)=5.4326, ER_sum mean=11.123 dB, ER_max mean=16.342 dB, diag share mean=92.77%
+
+Merged (3-run) ER summary by channel:
+  l=0: ER_sum=12.015 +/- 0.480 dB, ER_max=17.454 +/- 0.692 dB, SignalShare=94.07 +/- 0.63%
+  l=1: ER_sum=12.279 +/- 0.186 dB, ER_max=17.080 +/- 0.387 dB, SignalShare=94.41 +/- 0.23%
+  l=2: ER_sum=12.177 +/- 0.208 dB, ER_max=17.241 +/- 0.257 dB, SignalShare=94.29 +/- 0.26%
+  l=3: ER_sum=11.577 +/- 0.293 dB, ER_max=16.007 +/- 1.175 dB, SignalShare=93.49 +/- 0.41%
+  l=4: ER_sum=11.160 +/- 0.297 dB, ER_max=15.782 +/- 0.428 dB, SignalShare=92.88 +/- 0.46%
+  l=5: ER_sum=11.063 +/- 0.517 dB, ER_max=15.845 +/- 0.618 dB, SignalShare=92.72 +/- 0.82%
+  l=6: ER_sum=10.767 +/- 0.548 dB, ER_max=15.753 +/- 0.285 dB, SignalShare=92.24 +/- 0.89%
+  l=7: ER_sum=10.663 +/- 0.460 dB, ER_max=15.853 +/- 0.256 dB, SignalShare=92.08 +/- 0.76%
+  l=8: ER_sum=10.947 +/- 0.357 dB, ER_max=16.175 +/- 0.393 dB, SignalShare=92.55 +/- 0.57%
+
+Merged overall stats (all channels x all runs):
+  ER_sum mean +/- errorbar95 = 11.405 +/- 0.251 dB
+  ER_max mean +/- errorbar95 = 16.354 +/- 0.298 dB
+  Combined diagonal share (percentage matrix): mean=93.19%, range=[92.08%, 94.41%]
+
+Output files:
+  - XLSX: triplicate_full9_aggregate.xlsx
+  - TXT : triplicate_full9_stats.txt

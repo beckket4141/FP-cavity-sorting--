@@ -1,0 +1,12 @@
+dataset,channel_l,diag_share_pct,e_sort_pct,ER_sum_db_from_matrix,ER_max_db_from_matrix
+experiment_aggregate,0,94.089869,5.910131,12.019458,17.554442
+experiment_aggregate,1,94.881770,5.118230,12.680630,17.715135
+experiment_aggregate,2,94.762733,5.237267,12.575329,17.612319
+experiment_aggregate,3,93.785639,6.214361,11.787399,16.071505
+experiment_aggregate,4,92.881491,7.118509,11.155401,15.950759
+experiment_aggregate,5,92.716705,7.283295,11.048301,15.824726
+experiment_aggregate,6,92.177563,7.822437,10.712831,15.841472
+experiment_aggregate,7,91.573556,8.426444,10.361257,15.692736
+experiment_aggregate,8,92.445237,7.554763,10.876637,16.718959
+experiment_aggregate,ALL,93.257174,6.742826,,
+experiment_aggregate,mutual_information_bits,2.651161,,,

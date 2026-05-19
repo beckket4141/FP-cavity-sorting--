@@ -1,0 +1,14 @@
+﻿table,output_field,source_file,source_field,source_value,transformation,role
+table3,L_set,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,baseline_L_mm,10.250000,direct,main
+table3,R_set,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,baseline_R_mm,25.000000,direct,main
+table3,(L/R)_set,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,baseline_L_mm/baseline_R_mm,0.410000000000,computed ratio,main
+table3,L_eff,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,L_mm,10.398543,direct,main
+table3,R_eff,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,R_mm,25.081023,direct,main
+table3,(L/R)_eff,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,L_over_R,0.414598031013,direct,main
+table3,k,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,k_relative_fit,0.222681763924,direct,main
+table3,FSR,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,fsr_final_ghz,9.915474790,direct,main
+table3,F,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\cavity_parameters_summary.csv,finesse_all_weighted_mean,32.256196604,direct,main
+table3,FSR_crosscheck_0p88_recommended,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\fsr_estimates.csv,method=recommended,9.915474789595464,cross-check against cavity_parameters_summary.fsr_final_ghz,cross_check
+table3,k_fit_max_abs_residual_0p88,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p88mm\原始数据分析结果\k_fit_summary.csv,residual,0.002800566114,max(abs(residual)) over l=0..8,cross_check
+table3,0p98_parallel_FSR,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p98mm\原始数据分析结果\cavity_parameters_summary.csv,fsr_final_ghz,9.919382513937308,parallel cross-check only,parallel_cross_check
+table3,0p98_parallel_k,D:\自制软件\1.thesis\My_nju_thesis-master\My_nju_thesis-master\验证推演3.15\腔实际性能参数验算\outputs\0p98mm\原始数据分析结果\cavity_parameters_summary.csv,k_relative_fit,0.221895127861,parallel cross-check only,parallel_cross_check

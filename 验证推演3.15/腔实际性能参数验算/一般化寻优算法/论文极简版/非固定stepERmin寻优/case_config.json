@@ -1,0 +1,31 @@
+{
+  "target_modes": [1, 4, 6, 10, 15, 18, 22, 27, 31, 37, 40, 46],
+  "search_window": {
+    "k_min": "1/5",
+    "k_max": "3/10"
+  },
+  "tau0": 3.0,
+  "fixed_finesse_values": {
+    "F32p21": 32.21,
+    "F87": 87.0
+  },
+  "geometry_target_L_over_R": 0.5,
+  "pareto_reference_finesse": "F87",
+  "representative_candidates_for_plot": ["6/29", "7/29", "10/37"],
+  "expected_smin_optimal_family": ["6/29", "7/29", "8/29"],
+  "expected_geometry_favored_candidate": "7/29",
+  "baseline_checks": {
+    "expected_q_limit": 90,
+    "candidate": "7/29",
+    "metrics": {
+      "F32p21": {
+        "ER_min_dB": 3.441632986403526,
+        "ER_mean_dB": 6.245809010406742
+      },
+      "F87": {
+        "ER_min_dB": 11.525972203367118,
+        "ER_mean_dB": 14.445405587001451
+      }
+    }
+  }
+}

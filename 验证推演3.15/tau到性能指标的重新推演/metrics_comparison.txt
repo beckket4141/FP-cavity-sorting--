@@ -1,0 +1,28 @@
+Theory and experiment sorter metrics
+
+theory_csv = D:\自制软件\thesis\验证推演3.15\tau到性能指标的重新推演\theory_probability_matrix.csv
+aggregate_xlsx = D:\自制软件\thesis\数据内容\对比度数据\最终数据\triplicate_full9_aggregate.xlsx
+aggregate_sheet = combined_percentage
+ER_summary_sheet = ER_summary
+
+theory: eta_sort=94.520405%, e_sort=5.479595%, I=2.738164 bits
+experiment: eta_sort=93.257174%, e_sort=6.742826%, I=2.651161 bits
+
+Per-channel consistency with ER_summary:
+  l=0: ER_sum_from_matrix=12.019458 dB vs ER_summary=12.032988 dB; ER_max_from_matrix=17.554442 dB vs ER_summary=17.471516 dB
+  l=1: ER_sum_from_matrix=12.680630 dB vs ER_summary=12.706162 dB; ER_max_from_matrix=17.715135 dB vs ER_summary=17.471487 dB
+  l=2: ER_sum_from_matrix=12.575329 dB vs ER_summary=12.610860 dB; ER_max_from_matrix=17.612319 dB vs ER_summary=17.622391 dB
+  l=3: ER_sum_from_matrix=11.787399 dB vs ER_summary=11.816861 dB; ER_max_from_matrix=16.071505 dB vs ER_summary=16.194724 dB
+  l=4: ER_sum_from_matrix=11.155401 dB vs ER_summary=11.159969 dB; ER_max_from_matrix=15.950759 dB vs ER_summary=15.781656 dB
+  l=5: ER_sum_from_matrix=11.048301 dB vs ER_summary=11.062792 dB; ER_max_from_matrix=15.824726 dB vs ER_summary=15.845433 dB
+  l=6: ER_sum_from_matrix=10.712831 dB vs ER_summary=10.728700 dB; ER_max_from_matrix=15.841472 dB vs ER_summary=15.753428 dB
+  l=7: ER_sum_from_matrix=10.361257 dB vs ER_summary=10.375229 dB; ER_max_from_matrix=15.692736 dB vs ER_summary=15.700062 dB
+  l=8: ER_sum_from_matrix=10.876637 dB vs ER_summary=10.882016 dB; ER_max_from_matrix=16.718959 dB vs ER_summary=16.023388 dB
+
+max_abs_diff_ER_sum_db = 0.035531
+max_abs_diff_ER_max_db = 0.695571
+
+Note: ER_sum is recomputed from the aggregated percentage matrix and should stay very close to
+the ER_summary sheet. ER_max can differ more because max() is nonlinear: averaging the per-run
+ER_max values is not the same operation as taking the maximum crosstalk channel after averaging
+the matrix itself.

@@ -1,0 +1,18 @@
+{
+  "target_role": "crosstalk_candidate",
+  "target_peak_index": 230,
+  "target_peak_lambda_nm": 794.9817677809838,
+  "target_peak_id": 1,
+  "target_lambda_nm": 794.9817677809838,
+  "left_base_index": 134,
+  "right_base_index": 316,
+  "original_peak_power_uW": 16.5,
+  "left_base_lambda_nm": 794.9782901658998,
+  "right_base_lambda_nm": 794.984899472799,
+  "baseline_at_peak_uW": 0.7822778761039779,
+  "old_peak_uW": 16.5,
+  "new_peak_uW": 13.356455575220796,
+  "left_base_power_uW": 0.646,
+  "right_base_power_uW": 0.905,
+  "modified_point_count": 183
+}

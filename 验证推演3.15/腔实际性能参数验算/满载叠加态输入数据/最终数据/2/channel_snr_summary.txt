@@ -1,0 +1,22 @@
+FP Channel SNR Report (Transmission-Normalized Calibration)
+Generated at: 2026-03-24T19:01:51
+
+9D:
+  SNR_sum_dB(det): mean=11.517, min=10.561, max=12.454
+  ER_pair_max_dB(det): mean=16.490, min=15.552, max=18.153
+  Per-channel:
+    ch=0: SNR_sum=12.131 dB, MC=12.130+/-0.020 dB, CI95=[12.091,12.169] | ER_pair_max=18.153 dB, MC=18.153+/-0.022, CI95=[18.111,18.195]
+    ch=1: SNR_sum=12.454 dB, MC=12.453+/-0.023 dB, CI95=[12.408,12.498] | ER_pair_max=17.203 dB, MC=17.200+/-0.030, CI95=[17.140,17.254]
+    ch=2: SNR_sum=12.381 dB, MC=12.381+/-0.015 dB, CI95=[12.352,12.411] | ER_pair_max=17.152 dB, MC=17.152+/-0.017, CI95=[17.118,17.186]
+    ch=3: SNR_sum=11.866 dB, MC=11.866+/-0.029 dB, CI95=[11.809,11.923] | ER_pair_max=16.870 dB, MC=16.869+/-0.034, CI95=[16.804,16.936]
+    ch=4: SNR_sum=11.391 dB, MC=11.391+/-0.017 dB, CI95=[11.357,11.424] | ER_pair_max=15.917 dB, MC=15.917+/-0.025, CI95=[15.866,15.966]
+    ch=5: SNR_sum=11.251 dB, MC=11.251+/-0.032 dB, CI95=[11.190,11.316] | ER_pair_max=15.552 dB, MC=15.552+/-0.030, CI95=[15.494,15.612]
+    ch=6: SNR_sum=10.659 dB, MC=10.659+/-0.012 dB, CI95=[10.635,10.683] | ER_pair_max=15.552 dB, MC=15.552+/-0.018, CI95=[15.515,15.586]
+    ch=7: SNR_sum=10.561 dB, MC=10.561+/-0.019 dB, CI95=[10.524,10.599] | ER_pair_max=15.612 dB, MC=15.612+/-0.019, CI95=[15.575,15.648]
+    ch=8: SNR_sum=10.956 dB, MC=10.956+/-0.019 dB, CI95=[10.919,10.993] | ER_pair_max=16.403 dB, MC=16.404+/-0.038, CI95=[16.329,16.479]
+
+Definitions:
+  S_ij = P_SMF(i|j) / P_trans(j)
+  y^(j) = S x^(j), solved by NNLS with x>=0
+  SNR_sum_dB = 10log10(P_j / sum_{i!=j} P_i)
+  ER_pair_max_dB = 10log10(P_j / max_{i!=j} P_i)

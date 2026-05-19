@@ -1,0 +1,817 @@
+{
+  "generated_at": "2026-03-28T18:36:30",
+  "data_root": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据",
+  "fixed_finesse": 32.21,
+  "global_summary": {
+    "nearest_neighbor_cavity_leak_percent_mean": 2.002178152789946,
+    "nearest_neighbor_cavity_leak_percent_range": [
+      1.6497446541932779,
+      2.3500707880335034
+    ],
+    "total_postmix_upper_percent_per_column_mean": 0.009105815123665829,
+    "total_postmix_upper_percent_per_column_max": 0.031442526878858665,
+    "single_neighbor_precavity_impurity_upper_percent_mean": 0.2469704568688271,
+    "single_neighbor_precavity_impurity_upper_percent_max": 1.8394499034403842,
+    "data_upper_bound_mean_success_bias_pct_pt": 0.007626895664283022,
+    "data_upper_bound_mean_er_bias_db": 0.005232770439450363,
+    "data_upper_bound_max_matrix_delta_pct_pt": 0.028433265803940344,
+    "data_upper_bound_max_er_delta_db": 0.019531228138308876
+  },
+  "runs": [
+    {
+      "run": "1",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\1\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2203147750829396,
+        0.44158587112320297,
+        0.6599982360447874,
+        0.8869823753267316,
+        0.1072958368289434,
+        0.32856561358324116,
+        0.5498379732519855,
+        0.7687284738551825
+      ],
+      "peak_transmittance_ratio": [
+        0.9226100151745067,
+        0.9144062688366484,
+        0.89396100808369,
+        0.8668384879725086,
+        0.8572411420708634,
+        0.839385017991495,
+        0.8142857142857143,
+        0.7996794871794872,
+        0.7991658646134103
+      ],
+      "nearest_neighbors": [
+        [
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.1072958368289434,
+            "cavity_leak_ratio": 0.019360022426890014,
+            "cavity_leak_percent": 1.9360022426890013,
+            "postmix_upper_bound": 7.495500392005113e-06,
+            "postmix_upper_percent": 0.0007495500392005113,
+            "precavity_impurity_upper_bound": 0.000387163827950647,
+            "precavity_impurity_upper_percent": 0.0387163827950647
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11301762467326837,
+            "cavity_leak_ratio": 0.01793142266907703,
+            "cavity_leak_percent": 1.7931422669077028,
+            "postmix_upper_bound": 7.460989020833617e-06,
+            "postmix_upper_percent": 0.0007460989020833617,
+            "precavity_impurity_upper_bound": 0.00041608461071525516,
+            "precavity_impurity_upper_percent": 0.041608461071525514
+          }
+        ],
+        [
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.10825083850030157,
+            "cavity_leak_ratio": 0.018636149509093904,
+            "cavity_leak_percent": 1.8636149509093904,
+            "postmix_upper_bound": 6.562534355027549e-06,
+            "postmix_upper_percent": 0.0006562534355027549,
+            "precavity_impurity_upper_bound": 0.00035214003578503284,
+            "precavity_impurity_upper_percent": 0.03521400357850328
+          },
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.11301893825399618,
+            "cavity_leak_ratio": 0.017715052496643856,
+            "cavity_leak_percent": 1.7715052496643857,
+            "postmix_upper_bound": 2.637888812679515e-05,
+            "postmix_upper_percent": 0.002637888812679515,
+            "precavity_impurity_upper_bound": 0.0014890663254761832,
+            "precavity_impurity_upper_percent": 0.14890663254761832
+          }
+        ],
+        [
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.1082521021287825,
+            "cavity_leak_ratio": 0.01872002408483427,
+            "cavity_leak_percent": 1.872002408483427,
+            "postmix_upper_bound": 3.5544529654089864e-05,
+            "postmix_upper_percent": 0.0035544529654089863,
+            "precavity_impurity_upper_bound": 0.00189874379931411,
+            "precavity_impurity_upper_percent": 0.18987437993141099
+          },
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.11302025753996181,
+            "cavity_leak_ratio": 0.01757798712983898,
+            "cavity_leak_percent": 1.757798712983898,
+            "postmix_upper_bound": 7.539997403847798e-05,
+            "postmix_upper_percent": 0.007539997403847798,
+            "precavity_impurity_upper_bound": 0.004289454388693063,
+            "precavity_impurity_upper_percent": 0.4289454388693063
+          }
+        ],
+        [
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.10873023781039515,
+            "cavity_leak_ratio": 0.0191340022343962,
+            "cavity_leak_percent": 1.9134002234396201,
+            "postmix_upper_bound": 8.429845266275747e-06,
+            "postmix_upper_percent": 0.0008429845266275747,
+            "precavity_impurity_upper_bound": 0.0004405688450857319,
+            "precavity_impurity_upper_percent": 0.04405688450857319
+          },
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.11016026279280189,
+            "cavity_leak_ratio": 0.018681417662212083,
+            "cavity_leak_percent": 1.8681417662212083,
+            "postmix_upper_bound": 8.893930838647269e-05,
+            "postmix_upper_percent": 0.00889393083864727,
+            "precavity_impurity_upper_bound": 0.004760843635886106,
+            "precavity_impurity_upper_percent": 0.47608436358861056
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.11301762467326837,
+            "cavity_leak_ratio": 0.020770409766013097,
+            "cavity_leak_percent": 2.07704097660131,
+            "postmix_upper_bound": 1.043869985523426e-05,
+            "postmix_upper_percent": 0.001043869985523426,
+            "precavity_impurity_upper_bound": 0.0005025755376437131,
+            "precavity_impurity_upper_percent": 0.050257553764371306
+          },
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.11825390147154913,
+            "cavity_leak_ratio": 0.01652594987038224,
+            "cavity_leak_percent": 1.652594987038224,
+            "postmix_upper_bound": 0.00030398656893335243,
+            "postmix_upper_percent": 0.030398656893335242,
+            "precavity_impurity_upper_bound": 0.018394499034403843,
+            "precavity_impurity_upper_percent": 1.8394499034403842
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.1072958368289434,
+            "cavity_leak_ratio": 0.023389436495451516,
+            "cavity_leak_percent": 2.3389436495451514,
+            "postmix_upper_bound": 5.334903300731327e-06,
+            "postmix_upper_percent": 0.0005334903300731326,
+            "precavity_impurity_upper_bound": 0.00022809028775741525,
+            "precavity_impurity_upper_percent": 0.022809028775741525
+          },
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.11301893825399618,
+            "cavity_leak_ratio": 0.02102317989410686,
+            "cavity_leak_percent": 2.102317989410686,
+            "postmix_upper_bound": 1.9409988893777907e-05,
+            "postmix_upper_percent": 0.0019409988893777906,
+            "precavity_impurity_upper_bound": 0.0009232660801812785,
+            "precavity_impurity_upper_percent": 0.09232660801812785
+          }
+        ],
+        [
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.10825083850030157,
+            "cavity_leak_ratio": 0.023500707880335033,
+            "cavity_leak_percent": 2.3500707880335034,
+            "postmix_upper_bound": 2.0176056748462976e-05,
+            "postmix_upper_percent": 0.0020176056748462973,
+            "precavity_impurity_upper_bound": 0.0008585297451974175,
+            "precavity_impurity_upper_percent": 0.08585297451974175
+          },
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.11302025753996181,
+            "cavity_leak_ratio": 0.02118618030349402,
+            "cavity_leak_percent": 2.118618030349402,
+            "postmix_upper_bound": 4.523571395101222e-05,
+            "postmix_upper_percent": 0.004523571395101222,
+            "precavity_impurity_upper_bound": 0.002135151938811356,
+            "precavity_impurity_upper_percent": 0.2135151938811356
+          }
+        ],
+        [
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.1082521021287825,
+            "cavity_leak_ratio": 0.023394385627103012,
+            "cavity_leak_percent": 2.3394385627103014,
+            "postmix_upper_bound": 2.3233690801871644e-05,
+            "postmix_upper_percent": 0.0023233690801871642,
+            "precavity_impurity_upper_bound": 0.0009931310517064744,
+            "precavity_impurity_upper_percent": 0.09931310517064744
+          },
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.11016026279280189,
+            "cavity_leak_ratio": 0.02195099900545921,
+            "cavity_leak_percent": 2.195099900545921,
+            "postmix_upper_bound": 2.7382377878729e-05,
+            "postmix_upper_percent": 0.0027382377878729,
+            "precavity_impurity_upper_bound": 0.0012474319675345531,
+            "precavity_impurity_upper_percent": 0.12474319675345531
+          }
+        ],
+        [
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.10873023781039515,
+            "cavity_leak_ratio": 0.022511702546292423,
+            "cavity_leak_percent": 2.2511702546292423,
+            "postmix_upper_bound": 2.8229084275665558e-05,
+            "postmix_upper_percent": 0.002822908427566556,
+            "precavity_impurity_upper_bound": 0.0012539737595420016,
+            "precavity_impurity_upper_percent": 0.12539737595420017
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11825390147154913,
+            "cavity_leak_ratio": 0.019015099091656607,
+            "cavity_leak_percent": 1.9015099091656607,
+            "postmix_upper_bound": 9.86940756751654e-05,
+            "postmix_upper_percent": 0.00986940756751654,
+            "precavity_impurity_upper_bound": 0.005190300360752268,
+            "precavity_impurity_upper_percent": 0.5190300360752268
+          }
+        ]
+      ],
+      "mean_single_neighbor_leak_percent": 2.0056896038515575,
+      "leak_percent_range": [
+        1.652594987038224,
+        2.3500707880335034
+      ],
+      "mean_total_postmix_upper_percent_per_column": 0.009314808106155337,
+      "max_total_postmix_upper_percent_per_column": 0.031442526878858665,
+      "mean_single_neighbor_precavity_impurity_upper_percent": 0.2542278624024247,
+      "max_single_neighbor_precavity_impurity_upper_percent": 1.8394499034403842,
+      "literal_full_leak_scenario": {
+        "reported_mean_success_percent": 93.45963246581715,
+        "corrected_mean_success_percent": 89.79600306900949,
+        "reported_mean_er_db": 11.575678735976163,
+        "corrected_mean_er_db": 9.461704613027742,
+        "reported_minus_corrected_success_pct_pt": 3.6636293968076643,
+        "reported_minus_corrected_er_db": 2.113974122948422,
+        "mean_abs_matrix_delta_pct_pt": 0.8211379396017203,
+        "max_abs_matrix_delta_pct_pt": 4.123579139429012,
+        "mean_abs_offdiag_delta_pct_pt": 0.46582650745097964,
+        "max_abs_offdiag_delta_pct_pt": 2.1212252611862743,
+        "max_abs_diag_delta_pct_pt": 4.123579139429012,
+        "max_abs_er_delta_db": 2.2830692011660094,
+        "min_corrected_response_entry": -0.005073369981710356
+      },
+      "data_driven_upper_bound_scenario": {
+        "reported_mean_success_percent": 93.45963246581715,
+        "corrected_mean_success_percent": 93.4526840378457,
+        "reported_mean_er_db": 11.575678735976163,
+        "corrected_mean_er_db": 11.57102904388192,
+        "reported_minus_corrected_success_pct_pt": 0.006948427971451565,
+        "reported_minus_corrected_er_db": 0.004649692094243818,
+        "mean_abs_matrix_delta_pct_pt": 0.0021331593340530044,
+        "max_abs_matrix_delta_pct_pt": 0.027945817182514432,
+        "mean_abs_offdiag_delta_pct_pt": 0.0013587282173145295,
+        "max_abs_offdiag_delta_pct_pt": 0.027945817182514432,
+        "max_abs_diag_delta_pct_pt": 0.02589581128401619,
+        "max_abs_er_delta_db": 0.016070633600232753,
+        "min_corrected_response_entry": -2.0643543854355672e-08
+      }
+    },
+    {
+      "run": "2",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\2\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2231759890859053,
+        0.443493324859254,
+        0.6638132213544284,
+        0.8898435893296974,
+        0.10920330738539258,
+        0.3333343368792098,
+        0.5522223043819745,
+        0.7715896878581482
+      ],
+      "peak_transmittance_ratio": [
+        0.9366197183098591,
+        0.9268069533394327,
+        0.915492957746479,
+        0.899486191393706,
+        0.8965882041787886,
+        0.8774436090225565,
+        0.8723457406944791,
+        0.8504413619167718,
+        0.840576171875
+      ],
+      "nearest_neighbors": [
+        [
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.10920330738539258,
+            "cavity_leak_ratio": 0.01928481306409082,
+            "cavity_leak_percent": 1.928481306409082,
+            "postmix_upper_bound": 1.062970160638529e-05,
+            "postmix_upper_percent": 0.001062970160638529,
+            "precavity_impurity_upper_bound": 0.0005511954702935787,
+            "precavity_impurity_upper_percent": 0.05511954702935787
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11015641067030257,
+            "cavity_leak_ratio": 0.01938609538641209,
+            "cavity_leak_percent": 1.938609538641209,
+            "postmix_upper_bound": 8.717852926280002e-06,
+            "postmix_upper_percent": 0.0008717852926280002,
+            "precavity_impurity_upper_bound": 0.0004496961741140732,
+            "precavity_impurity_upper_percent": 0.044969617411407314
+          }
+        ],
+        [
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.11015834779330452,
+            "cavity_leak_ratio": 0.01906099730432509,
+            "cavity_leak_percent": 1.906099730432509,
+            "postmix_upper_bound": 1.4164344068012368e-05,
+            "postmix_upper_percent": 0.0014164344068012368,
+            "precavity_impurity_upper_bound": 0.0007431061366761941,
+            "precavity_impurity_upper_percent": 0.07431061366761942
+          },
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.11397268170051272,
+            "cavity_leak_ratio": 0.017984444232342533,
+            "cavity_leak_percent": 1.7984444232342534,
+            "postmix_upper_bound": 1.675192197562179e-05,
+            "postmix_upper_percent": 0.0016751921975621791,
+            "precavity_impurity_upper_bound": 0.0009314673147083288,
+            "precavity_impurity_upper_percent": 0.09314673147083288
+          }
+        ],
+        [
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.10872897952272048,
+            "cavity_leak_ratio": 0.019279950066120936,
+            "cavity_leak_percent": 1.9279950066120937,
+            "postmix_upper_bound": 8.553760123514578e-06,
+            "postmix_upper_percent": 0.0008553760123514578,
+            "precavity_impurity_upper_bound": 0.00044366090649505336,
+            "precavity_impurity_upper_percent": 0.044366090649505335
+          },
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.1101589879800442,
+            "cavity_leak_ratio": 0.019296349157925472,
+            "cavity_leak_percent": 1.9296349157925472,
+            "postmix_upper_bound": 5.585438821836333e-05,
+            "postmix_upper_percent": 0.005585438821836333,
+            "precavity_impurity_upper_bound": 0.0028945572948146305,
+            "precavity_impurity_upper_percent": 0.28945572948146303
+          }
+        ],
+        [
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.10777646650371975,
+            "cavity_leak_ratio": 0.019719285761983278,
+            "cavity_leak_percent": 1.9719285761983278,
+            "postmix_upper_bound": 9.228423160707695e-05,
+            "postmix_upper_percent": 0.009228423160707695,
+            "precavity_impurity_upper_bound": 0.00467989727016337,
+            "precavity_impurity_upper_percent": 0.46798972701633695
+          },
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.11159091697245394,
+            "cavity_leak_ratio": 0.01868728639455704,
+            "cavity_leak_percent": 1.868728639455704,
+            "postmix_upper_bound": 0.00012909758336602828,
+            "postmix_upper_percent": 0.012909758336602828,
+            "precavity_impurity_upper_bound": 0.006908310850505825,
+            "precavity_impurity_upper_percent": 0.6908310850505824
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.11015641067030257,
+            "cavity_leak_ratio": 0.0211558703459484,
+            "cavity_leak_percent": 2.11558703459484,
+            "postmix_upper_bound": 5.674831544417192e-06,
+            "postmix_upper_percent": 0.0005674831544417192,
+            "precavity_impurity_upper_bound": 0.0002682390963652313,
+            "precavity_impurity_upper_percent": 0.026823909636523133
+          },
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.11825390147154924,
+            "cavity_leak_ratio": 0.016619446886588438,
+            "cavity_leak_percent": 1.6619446886588438,
+            "postmix_upper_bound": 0.00029841427243961925,
+            "postmix_upper_percent": 0.029841427243961924,
+            "precavity_impurity_upper_bound": 0.017955728278805334,
+            "precavity_impurity_upper_percent": 1.7955728278805334
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.10920330738539258,
+            "cavity_leak_ratio": 0.021973720516710805,
+            "cavity_leak_percent": 2.1973720516710804,
+            "postmix_upper_bound": 2.951809525235338e-06,
+            "postmix_upper_percent": 0.0002951809525235338,
+            "precavity_impurity_upper_bound": 0.00013433362470367796,
+            "precavity_impurity_upper_percent": 0.013433362470367796
+          },
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.11397268170051272,
+            "cavity_leak_ratio": 0.020064907324425448,
+            "cavity_leak_percent": 2.0064907324425447,
+            "postmix_upper_bound": 1.460923130336895e-05,
+            "postmix_upper_percent": 0.001460923130336895,
+            "precavity_impurity_upper_bound": 0.0007280986185061924,
+            "precavity_impurity_upper_percent": 0.07280986185061925
+          }
+        ],
+        [
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.11015834779330452,
+            "cavity_leak_ratio": 0.02151527477505273,
+            "cavity_leak_percent": 2.1515274775052733,
+            "postmix_upper_bound": 1.4773415753902834e-05,
+            "postmix_upper_percent": 0.0014773415753902835,
+            "precavity_impurity_upper_bound": 0.0006866477843468131,
+            "precavity_impurity_upper_percent": 0.0686647784346813
+          },
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.1101589879800442,
+            "cavity_leak_ratio": 0.0212523947893541,
+            "cavity_leak_percent": 2.12523947893541,
+            "postmix_upper_bound": 3.243241227767317e-05,
+            "postmix_upper_percent": 0.003243241227767317,
+            "precavity_impurity_upper_bound": 0.0015260591852885891,
+            "precavity_impurity_upper_percent": 0.1526059185288589
+          }
+        ],
+        [
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.10872897952272048,
+            "cavity_leak_ratio": 0.022342263630496354,
+            "cavity_leak_percent": 2.2342263630496353,
+            "postmix_upper_bound": 1.695301407042022e-05,
+            "postmix_upper_percent": 0.0016953014070420218,
+            "precavity_impurity_upper_bound": 0.0007587867707048264,
+            "precavity_impurity_upper_percent": 0.07587867707048264
+          },
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.11159091697245394,
+            "cavity_leak_ratio": 0.02090482296701188,
+            "cavity_leak_percent": 2.0904822967011882,
+            "postmix_upper_bound": 4.080475100859337e-05,
+            "postmix_upper_percent": 0.0040804751008593374,
+            "precavity_impurity_upper_bound": 0.0019519299959145251,
+            "precavity_impurity_upper_percent": 0.1951929995914525
+          }
+        ],
+        [
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.10777646650371975,
+            "cavity_leak_ratio": 0.022580108910933382,
+            "cavity_leak_percent": 2.2580108910933383,
+            "postmix_upper_bound": 2.0112466797371946e-05,
+            "postmix_upper_percent": 0.0020112466797371944,
+            "precavity_impurity_upper_bound": 0.000890716111100483,
+            "precavity_impurity_upper_percent": 0.0890716111100483
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11825390147154924,
+            "cavity_leak_ratio": 0.01890812471157835,
+            "cavity_leak_percent": 1.890812471157835,
+            "postmix_upper_bound": 7.66297500715359e-05,
+            "postmix_upper_percent": 0.00766297500715359,
+            "precavity_impurity_upper_bound": 0.004052741942441909,
+            "precavity_impurity_upper_percent": 0.40527419424419087
+          }
+        ]
+      ],
+      "mean_single_neighbor_leak_percent": 2.000089756810318,
+      "leak_percent_range": [
+        1.6619446886588438,
+        2.2580108910933383
+      ],
+      "mean_total_postmix_upper_percent_per_column": 0.009548997096482452,
+      "max_total_postmix_upper_percent_per_column": 0.030408910398403644,
+      "mean_single_neighbor_precavity_impurity_upper_percent": 0.258639849033048,
+      "max_single_neighbor_precavity_impurity_upper_percent": 1.7955728278805334,
+      "literal_full_leak_scenario": {
+        "reported_mean_success_percent": 93.34641069846268,
+        "corrected_mean_success_percent": 89.67786415134834,
+        "reported_mean_er_db": 11.516556183899938,
+        "corrected_mean_er_db": 9.413198893213073,
+        "reported_minus_corrected_success_pct_pt": 3.6685465471143317,
+        "reported_minus_corrected_er_db": 2.1033572906868656,
+        "mean_abs_matrix_delta_pct_pt": 0.8278335573639304,
+        "max_abs_matrix_delta_pct_pt": 3.84912524186025,
+        "mean_abs_offdiag_delta_pct_pt": 0.4727444336451294,
+        "max_abs_offdiag_delta_pct_pt": 2.0261781308331575,
+        "max_abs_diag_delta_pct_pt": 3.84912524186025,
+        "max_abs_er_delta_db": 2.3476087601675424,
+        "min_corrected_response_entry": -0.004504869016351079
+      },
+      "data_driven_upper_bound_scenario": {
+        "reported_mean_success_percent": 93.34641069846268,
+        "corrected_mean_success_percent": 93.3378630093949,
+        "reported_mean_er_db": 11.516556183899938,
+        "corrected_mean_er_db": 11.510514992280205,
+        "reported_minus_corrected_success_pct_pt": 0.008547689067782471,
+        "reported_minus_corrected_er_db": 0.006041191619733155,
+        "mean_abs_matrix_delta_pct_pt": 0.001950854770921406,
+        "max_abs_matrix_delta_pct_pt": 0.028433265803940344,
+        "mean_abs_offdiag_delta_pct_pt": 0.0011262504838155493,
+        "max_abs_offdiag_delta_pct_pt": 0.02793330569542407,
+        "max_abs_diag_delta_pct_pt": 0.028433265803940344,
+        "max_abs_er_delta_db": 0.019531228138308876,
+        "min_corrected_response_entry": -1.9401658722925547e-07
+      }
+    },
+    {
+      "run": "3",
+      "transmission_xlsx": "D:\\自制软件\\1.thesis\\My_nju_thesis-master\\thesis\\验证推演3.15\\腔实际性能参数验算\\满载叠加态输入数据\\最终数据\\3\\透射率.xlsx",
+      "lock_positions": [
+        0.0,
+        0.2231759890859053,
+        0.443493324859254,
+        0.6638132213544284,
+        0.8898435893296974,
+        0.10920330738539258,
+        0.3304730729993968,
+        0.5526991872549513,
+        0.7715896878581482
+      ],
+      "peak_transmittance_ratio": [
+        0.9275534441805224,
+        0.9085794655414908,
+        0.9055291102160381,
+        0.8982655103402268,
+        0.9041586339851281,
+        0.8794575590155701,
+        0.8676470588235294,
+        0.8292978208232445,
+        0.8414510400811771
+      ],
+      "nearest_neighbors": [
+        [
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.10920330738539258,
+            "cavity_leak_ratio": 0.01951800651385825,
+            "cavity_leak_percent": 1.9518006513858248,
+            "postmix_upper_bound": 4.819779870859206e-06,
+            "postmix_upper_percent": 0.00048197798708592057,
+            "precavity_impurity_upper_bound": 0.0002469401712432593,
+            "precavity_impurity_upper_percent": 0.024694017124325927
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11015641067030257,
+            "cavity_leak_ratio": 0.019740871087303685,
+            "cavity_leak_percent": 1.9740871087303686,
+            "postmix_upper_bound": 3.993899617811612e-06,
+            "postmix_upper_percent": 0.0003993899617811612,
+            "precavity_impurity_upper_bound": 0.00020231628078359133,
+            "precavity_impurity_upper_percent": 0.020231628078359133
+          }
+        ],
+        [
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.10729708391349152,
+            "cavity_leak_ratio": 0.020320457689353113,
+            "cavity_leak_percent": 2.032045768935311,
+            "postmix_upper_bound": 1.792890793369819e-05,
+            "postmix_upper_percent": 0.001792890793369819,
+            "precavity_impurity_upper_bound": 0.0008823082731592225,
+            "precavity_impurity_upper_percent": 0.08823082731592224
+          },
+          {
+            "mode": 5,
+            "geodesic_spacing": 0.11397268170051272,
+            "cavity_leak_ratio": 0.01838734643290861,
+            "cavity_leak_percent": 1.8387346432908611,
+            "postmix_upper_bound": 1.2532014179827725e-05,
+            "postmix_upper_percent": 0.0012532014179827725,
+            "precavity_impurity_upper_bound": 0.0006815564293387462,
+            "precavity_impurity_upper_percent": 0.06815564293387462
+          }
+        ],
+        [
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.10920586239569724,
+            "cavity_leak_ratio": 0.018851612594421103,
+            "cavity_leak_percent": 1.8851612594421103,
+            "postmix_upper_bound": 4.850946574752801e-05,
+            "postmix_upper_percent": 0.004850946574752801,
+            "precavity_impurity_upper_bound": 0.0025732263223934367,
+            "precavity_impurity_upper_percent": 0.25732263223934365
+          },
+          {
+            "mode": 6,
+            "geodesic_spacing": 0.1130202518598572,
+            "cavity_leak_ratio": 0.01849062652548187,
+            "cavity_leak_percent": 1.849062652548187,
+            "postmix_upper_bound": 8.20414513505561e-05,
+            "postmix_upper_percent": 0.00820414513505561,
+            "precavity_impurity_upper_bound": 0.004436921119870928,
+            "precavity_impurity_upper_percent": 0.4436921119870928
+          }
+        ],
+        [
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.10777646650371975,
+            "cavity_leak_ratio": 0.019766634556710277,
+            "cavity_leak_percent": 1.9766634556710276,
+            "postmix_upper_bound": 6.292513884110181e-05,
+            "postmix_upper_percent": 0.0062925138841101805,
+            "precavity_impurity_upper_bound": 0.0031834017399659117,
+            "precavity_impurity_upper_percent": 0.31834017399659115
+          },
+          {
+            "mode": 7,
+            "geodesic_spacing": 0.11111403409947718,
+            "cavity_leak_ratio": 0.018394934733841538,
+            "cavity_leak_percent": 1.8394934733841537,
+            "postmix_upper_bound": 8.267611486614138e-05,
+            "postmix_upper_percent": 0.008267611486614139,
+            "precavity_impurity_upper_bound": 0.004494504387343133,
+            "precavity_impurity_upper_percent": 0.44945043873431334
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.11015641067030257,
+            "cavity_leak_ratio": 0.020775664796924637,
+            "cavity_leak_percent": 2.0775664796924636,
+            "postmix_upper_bound": 1.0342174956084353e-05,
+            "postmix_upper_percent": 0.0010342174956084352,
+            "precavity_impurity_upper_bound": 0.0004978023594997199,
+            "precavity_impurity_upper_percent": 0.04978023594997199
+          },
+          {
+            "mode": 8,
+            "geodesic_spacing": 0.11825390147154924,
+            "cavity_leak_ratio": 0.01649744654193278,
+            "cavity_leak_percent": 1.6497446541932779,
+            "postmix_upper_bound": 0.00024482677338101674,
+            "postmix_upper_percent": 0.024482677338101673,
+            "precavity_impurity_upper_bound": 0.014840282874002497,
+            "precavity_impurity_upper_percent": 1.4840282874002497
+          }
+        ],
+        [
+          {
+            "mode": 0,
+            "geodesic_spacing": 0.10920330738539258,
+            "cavity_leak_ratio": 0.021711187163835913,
+            "cavity_leak_percent": 2.1711187163835914,
+            "postmix_upper_bound": 7.3737964756644665e-06,
+            "postmix_upper_percent": 0.0007373796475664467,
+            "precavity_impurity_upper_bound": 0.00033963119658177507,
+            "precavity_impurity_upper_percent": 0.033963119658177505
+          },
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.11397268170051272,
+            "cavity_leak_ratio": 0.019625246531354366,
+            "cavity_leak_percent": 1.9625246531354366,
+            "postmix_upper_bound": 8.874019213332585e-06,
+            "postmix_upper_percent": 0.0008874019213332585,
+            "precavity_impurity_upper_bound": 0.00045217364271857513,
+            "precavity_impurity_upper_percent": 0.04521736427185751
+          }
+        ],
+        [
+          {
+            "mode": 1,
+            "geodesic_spacing": 0.10729708391349152,
+            "cavity_leak_ratio": 0.022282972394357583,
+            "cavity_leak_percent": 2.2282972394357583,
+            "postmix_upper_bound": 2.393098054945684e-05,
+            "postmix_upper_percent": 0.002393098054945684,
+            "precavity_impurity_upper_bound": 0.0010739581832231932,
+            "precavity_impurity_upper_percent": 0.10739581832231931
+          },
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.1130202518598572,
+            "cavity_leak_ratio": 0.02014050062074365,
+            "cavity_leak_percent": 2.014050062074365,
+            "postmix_upper_bound": 2.400017326101552e-05,
+            "postmix_upper_percent": 0.002400017326101552,
+            "precavity_impurity_upper_bound": 0.0011916373735167541,
+            "precavity_impurity_upper_percent": 0.11916373735167542
+          }
+        ],
+        [
+          {
+            "mode": 2,
+            "geodesic_spacing": 0.10920586239569724,
+            "cavity_leak_ratio": 0.022476686615731656,
+            "cavity_leak_percent": 2.2476686615731656,
+            "postmix_upper_bound": 2.0870823287087736e-05,
+            "postmix_upper_percent": 0.0020870823287087734,
+            "precavity_impurity_upper_bound": 0.0009285542679800518,
+            "precavity_impurity_upper_percent": 0.09285542679800518
+          },
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.11111403409947718,
+            "cavity_leak_ratio": 0.021581749766503178,
+            "cavity_leak_percent": 2.1581749766503178,
+            "postmix_upper_bound": 4.000111030046973e-05,
+            "postmix_upper_percent": 0.004000111030046973,
+            "precavity_impurity_upper_bound": 0.0018534692846154236,
+            "precavity_impurity_upper_percent": 0.18534692846154235
+          }
+        ],
+        [
+          {
+            "mode": 3,
+            "geodesic_spacing": 0.10777646650371975,
+            "cavity_leak_ratio": 0.022526020748445744,
+            "cavity_leak_percent": 2.2526020748445745,
+            "postmix_upper_bound": 3.1182847269467104e-05,
+            "postmix_upper_percent": 0.0031182847269467105,
+            "precavity_impurity_upper_bound": 0.0013843034070550905,
+            "precavity_impurity_upper_percent": 0.13843034070550905
+          },
+          {
+            "mode": 4,
+            "geodesic_spacing": 0.11825390147154924,
+            "cavity_leak_ratio": 0.0190479522737251,
+            "cavity_leak_percent": 1.9047952273725102,
+            "postmix_upper_bound": 3.399814405125388e-05,
+            "postmix_upper_percent": 0.003399814405125388,
+            "precavity_impurity_upper_bound": 0.0017848713374902347,
+            "precavity_impurity_upper_percent": 0.17848713374902347
+          }
+        ]
+      ],
+      "mean_single_neighbor_leak_percent": 2.000755097707961,
+      "leak_percent_range": [
+        1.6497446541932779,
+        2.2526020748445745
+      ],
+      "mean_total_postmix_upper_percent_per_column": 0.0084536401683597,
+      "max_total_postmix_upper_percent_per_column": 0.02551689483371011,
+      "mean_single_neighbor_precavity_impurity_upper_percent": 0.22804365917100858,
+      "max_single_neighbor_precavity_impurity_upper_percent": 1.4840282874002497,
+      "literal_full_leak_scenario": {
+        "reported_mean_success_percent": 92.76749797634193,
+        "corrected_mean_success_percent": 89.1418910565459,
+        "reported_mean_er_db": 11.123404844841115,
+        "corrected_mean_er_db": 9.166191472290944,
+        "reported_minus_corrected_success_pct_pt": 3.6256069197960272,
+        "reported_minus_corrected_er_db": 1.9572133725501715,
+        "mean_abs_matrix_delta_pct_pt": 0.8151537477024575,
+        "max_abs_matrix_delta_pct_pt": 3.952652883589721,
+        "mean_abs_offdiag_delta_pct_pt": 0.4638471011907618,
+        "max_abs_offdiag_delta_pct_pt": 1.9824835211925147,
+        "max_abs_diag_delta_pct_pt": 3.952652883589721,
+        "max_abs_er_delta_db": 2.2862034447416573,
+        "min_corrected_response_entry": -0.00471003965300602
+      },
+      "data_driven_upper_bound_scenario": {
+        "reported_mean_success_percent": 92.76749797634193,
+        "corrected_mean_success_percent": 92.76011340638831,
+        "reported_mean_er_db": 11.123404844841115,
+        "corrected_mean_er_db": 11.118397417236741,
+        "reported_minus_corrected_success_pct_pt": 0.007384569953615028,
+        "reported_minus_corrected_er_db": 0.005007427604374115,
+        "mean_abs_matrix_delta_pct_pt": 0.0018755253555844769,
+        "max_abs_matrix_delta_pct_pt": 0.022707863861934907,
+        "mean_abs_offdiag_delta_pct_pt": 0.001154508845713379,
+        "max_abs_offdiag_delta_pct_pt": 0.022707863861934907,
+        "max_abs_diag_delta_pct_pt": 0.02241860296585685,
+        "max_abs_er_delta_db": 0.014877184867899018,
+        "min_corrected_response_entry": -2.3566575852136535e-08
+      }
+    }
+  ]
+}
