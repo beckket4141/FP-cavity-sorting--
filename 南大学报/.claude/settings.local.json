@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($wshell = New-Object -ComObject WScript.Shell; $shortcut = $wshell.CreateShortcut\\(\"C:\\\\Users\\\\Public\\\\Desktop\\\\LibreOffice 26.2.lnk\"\\); $shortcut.TargetPath)",
+      "Bash(python _extract_eq.py)"
+    ]
+  }
+}

@@ -10,9 +10,9 @@
 
 ## 1 引言
 
-携带轨道角动量（orbital angular momentum, OAM）的拉盖尔-高斯模式为高维光通信、空间模式复用与量子信息处理提供了重要自由度[1-6]。在这类应用中，输出端既要区分不同空间模式，也常常需要保留输入横向场的振幅与相位结构，以便继续进行干涉、路由或级联处理。现有模式分束技术包括坐标变换、多平面光转换、干涉级联和衍射光学设计等[7-11]。这些方法在模式判别和容量扩展方面已经得到广泛应用；对部分量子逻辑、相干路由和模块化空间模式处理任务而言，保态分束仍是一个独立需求[12]。
+携带轨道角动量（orbital angular momentum, OAM）的拉盖尔-高斯模式为高维光通信、空间模式复用与量子信息处理提供了重要自由度[1-8]。在这类应用中，输出端既要区分不同空间模式，也常常需要保留输入横向场的振幅与相位结构，以便继续进行干涉、路由或级联处理。现有模式分束技术包括坐标变换、多平面光转换、干涉级联和衍射光学设计等[9-13]。这些方法在模式判别和容量扩展方面已经得到广泛应用；对部分量子逻辑、相干路由和模块化空间模式处理任务而言，保态分束仍是一个独立需求[14]。
 
-FP 腔为保态模式选择提供了频谱路径。稳定腔中横模共振频率由 Gouy 相位决定[13-14]，不同横向模式可在频域中被选择性透射，理想情况下横向场分布不被改变。近年来，基于可调 FP 谐振器和薄膜 FP 滤波器的 OAM 或模式组选择已有实验展示[15-17]，表明 FP 腔可以作为空间模式频谱器件。现有研究多围绕具体器件或少数模式任务展开；面向给定目标模式集，尤其是高维连续模式组时，仍需把腔型选择、容量边界和几何鲁棒性放在同一套设计变量下处理。
+FP 腔为保态模式选择提供了频谱路径。稳定腔中横模共振频率由 Gouy 相位决定[15-17]，不同横向模式可在频域中被选择性透射，理想情况下横向场分布不被改变。早期研究已经讨论了高精细 FP 腔中 OAM 模式简并和镜面效应引起的模式混合[18]。随后，基于 MEMS 可调 FP 滤波器、可调 FP 谐振器和薄膜 FP 滤波器的 OAM 或模式组选择得到实验展示[19-23]，表明 FP 腔可以作为空间模式频谱器件。现有研究多围绕具体器件或少数模式任务展开；面向给定目标模式集，尤其是高维连续模式组时，仍需把腔型选择、容量边界和几何鲁棒性放在同一套设计变量下处理。
 
 在稳定各向同性 FP 腔中，横模共振频率的基本变量是横模阶数
 
@@ -22,7 +22,7 @@ $$
 
 同一 $N$ 下的不同模式（例如不同的 $p$ 和 $l$ 组合，以及 $+l$ 与 $-l$）在理想频谱位置上简并。单个各向同性 FP 腔因而按 $N$ 对模式成组响应。LG 模式分束或 OAM 分选在单腔中表现为按横模阶数的模式组选通；决定分束排布的是单自由光谱范围（free spectral range, FSR）内不同横模共振位置的相对间隔，而不是某一类腔型的名称。将不同稳定双镜腔映射到有效 Gouy 步长后，平凹腔、对称双凹腔和一般稳定两镜腔可用同一折叠谱描述；腔型差异则体现在有效步长到几何参数的回代关系，以及由此产生的工程鲁棒性排序。
 
-围绕这一问题，本文以有效归一化 Gouy 步长 $k_{\mathrm{eff}}$ 描述折叠谱排布，并把选定的 $k_{\mathrm{eff}}$ 回代到平凹腔、对称双凹腔和一般稳定两镜腔的几何参数。连续模式组的排布优化由最小圆周间距给出，解析最优分支可写成 $k=m/M$，对应的层级结构用 Farey 邻分数骨架说明。有限线宽效应进一步通过周期 Airy 透射函数转化为有限维串扰求和和条件概率，从而得到分选成功率、串扰抑制指标、容量边界和大维度极限。OAM 序列作为 $p=0$、单符号 $l$ 的特例处理，径向寄生峰则由轴对称失配和相同 $N$ 简并给出解释。
+本文以有效归一化 Gouy 步长 $k_{\mathrm{eff}}$ 描述折叠谱排布，并把选定的 $k_{\mathrm{eff}}$ 回代到平凹腔、对称双凹腔和一般稳定两镜腔的几何参数。连续模式组的排布优化由最小圆周间距给出，解析最优分支可写成 $k=m/M$，对应的层级结构用 Farey 邻分数骨架说明。有限线宽效应进一步通过周期 Airy 透射函数转化为有限维串扰求和和条件概率，从而得到分选成功率、串扰抑制指标、容量边界和大维度极限。OAM 序列作为 $p=0$、单符号 $l$ 的特例处理，径向寄生峰则由轴对称失配和相同 $N$ 简并给出解释。
 
 ---
 
@@ -363,24 +363,45 @@ OAM 连续序列对应 $p=0$、单符号 $l$ 的特例。单个各向同性 FP �
 
 [6] Erhard M, Krenn M, Zeilinger A. Advances in high-dimensional quantum entanglement[J]. Nature Reviews Physics, 2020, 2(7): 365-381.
 
-[7] Leach J, Padgett M J, Barnett S M, et al. Measuring the orbital angular momentum of a single photon[J]. Physical Review Letters, 2002, 88(25): 257901.
+[7] 刘俊, 王健. 轨道角动量光信号处理研究进展[J]. 通信学报, 2021, 42(11): 217-232.
 
-[8] Berkhout G C G, Lavery M P J, Courtial J, et al. Efficient sorting of orbital angular momentum states of light[J]. Physical Review Letters, 2010, 105(15): 153601.
+[8] Guo H, Liu N, Li Z, et al. Generation of continuous-variable high-dimensional entanglement with three degrees of freedom and multiplexing quantum dense coding[J]. Photonics Research, 2022, 10(12): 2828-2835.
 
-[9] Mirhosseini M, Malik M, Shi Z, et al. Efficient separation of the orbital angular momentum eigenstates of light[J]. Nature Communications, 2013, 4: 2781.
+[9] Leach J, Padgett M J, Barnett S M, et al. Measuring the orbital angular momentum of a single photon[J]. Physical Review Letters, 2002, 88(25): 257901.
 
-[10] Labroille G, Denolle B, Jian P, et al. Efficient and mode selective spatial mode multiplexer based on multi-plane light conversion[J]. Optics Express, 2014, 22(13): 15599-15607.
+[10] Berkhout G C G, Lavery M P J, Courtial J, et al. Efficient sorting of orbital angular momentum states of light[J]. Physical Review Letters, 2010, 105(15): 153601.
 
-[11] Fontaine N K, Ryf R, Chen H, et al. Laguerre-Gaussian mode sorter[J]. Nature Communications, 2019, 10: 1865.
+[11] Mirhosseini M, Malik M, Shi Z, et al. Efficient separation of the orbital angular momentum eigenstates of light[J]. Nature Communications, 2013, 4: 2781.
 
-[12] Brandt F, Hiekkamaki M, Bouchard F, et al. High-dimensional quantum gates using full-field spatial modes of photons[J]. Optica, 2020, 7(2): 98-107.
+[12] Labroille G, Denolle B, Jian P, et al. Efficient and mode selective spatial mode multiplexer based on multi-plane light conversion[J]. Optics Express, 2014, 22(13): 15599-15607.
 
-[13] Kogelnik H, Li T. Laser beams and resonators[J]. Applied Optics, 1966, 5(10): 1550-1567.
+[13] Fontaine N K, Ryf R, Chen H, et al. Laguerre-Gaussian mode sorter[J]. Nature Communications, 2019, 10: 1865.
 
-[14] Siegman A E. Lasers[M]. Sausalito: University Science Books, 1986.
+[14] Brandt F, Hiekkamaki M, Bouchard F, et al. High-dimensional quantum gates using full-field spatial modes of photons[J]. Optica, 2020, 7(2): 98-107.
 
-[15] Wei S, Earl S K, Lin J, et al. Active sorting of orbital angular momentum states of light with a cascaded tunable resonator[J]. Light: Science & Applications, 2020, 9: 10.
+[15] Kogelnik H, Li T. Laser beams and resonators[J]. Applied Optics, 1966, 5(10): 1550-1567.
 
-[16] Vanani F G, Fardoost A, Zhang Y, et al. Low-crosstalk mode-group demultiplexers based on Fabry-Perot thin-film filters[J]. Optics Express, 2022, 30(22): 39258-39268.
+[16] Siegman A E. Lasers[M]. Sausalito: University Science Books, 1986.
 
-[17] Yang Y F, Chen M Y, Li F P, et al. Scalable cyclic transformation of orbital angular momentum modes based on a nonreciprocal Mach-Zehnder interferometer[J]. Photonics Research, 2024, 12(10): 2249-2256.
+[17] 张天才, 毋伟, 杨鹏飞, 等. 高精细度法布里-珀罗光学微腔及其在强耦合腔量子电动力学中的应用[J]. 光学学报, 2021, 41(1): 0127001.
+
+[18] Foster D H, Nöckel J U. Bragg-induced orbital-angular-momentum mixing in paraxial high-finesse cavities[J]. Optics Letters, 2004, 29(23): 2788-2790.
+
+[19] Paul S, Lyubopytov V S, Schumann M F, et al. Wavelength-selective orbital-angular-momentum beam generation using MEMS tunable Fabry-Perot filter[J]. Optics Letters, 2016, 41(14): 3249-3252.
+
+[20] Lyubopytov V S, Porfirev A P, Gurbatov S O, et al. Simultaneous wavelength and orbital angular momentum demultiplexing using tunable MEMS-based Fabry-Perot filter[J]. Optics Express, 2017, 25(9): 9634-9646.
+
+[21] Wei S, Earl S K, Lin J, et al. Active sorting of orbital angular momentum states of light with a cascaded tunable resonator[J]. Light: Science & Applications, 2020, 9: 10.
+
+[22] Vanani F G, Fardoost A, Zhang Y, et al. Low-crosstalk mode-group demultiplexers based on Fabry-Perot thin-film filters[J]. Optics Express, 2022, 30(22): 39258-39268.
+
+[23] Yang Y F, Chen M Y, Li F P, et al. Scalable cyclic transformation of orbital angular momentum modes based on a nonreciprocal Mach-Zehnder interferometer[J]. Photonics Research, 2024, 12(10): 2249-2256.
+
+
+## 英文摘要
+
+**Unified design framework and error mechanism for Laguerre-Gaussian mode sorting in stable two-mirror Fabry-Perot cavities**
+
+**Abstract:** Fabry-Perot (FP) cavities can perform mode-preserving spectral sorting of Laguerre-Gaussian (LG) modes through Gouy-phase-dependent resonances. In a stable isotropic FP cavity, the transverse resonance frequency is determined by the mode order $N=2p+|l|+1$, so a single cavity responds to LG modes as groups with the same $N$. Using the effective normalized Gouy step $k_{\mathrm{eff}}$ as the design parameter, this work gives a folded-spectrum method for stable two-mirror FP cavities and derives the corresponding geometric back-substitution relations for plane-concave, symmetric double-concave, and general stable two-mirror cavities. For consecutive mode groups $S_M=\{1,2,\ldots,M\}$, the optimal arrangement is obtained at $k^\*=m/M$ with $\gcd(m,M)=1$, giving the minimum circular spacing $s_{\min}=1/M$. The hierarchy of the spacing landscape is organized by the Farey-neighbor structure. A periodic Airy transmission function is then used to calculate finite-dimensional crosstalk sums and conditional probabilities, leading to the sorting efficiency $\eta_{\mathrm{sort}}$, the crosstalk metric $ER_{\mathrm{sum}}$, and the capacity boundary. For $M=9$, $F=32.21$, and $k=2/9$, the theoretical calculation gives $\eta_{\mathrm{sort}}=94.1166\%$ and an average $ER_{\mathrm{sum}}=12.0404\,\mathrm{dB}$. A consecutive OAM sequence is a special case with $p=0$ and a single sign of $l$. A single isotropic FP cavity does not distinguish $+l$ from $-l$, and radial parasitic peaks in the measured spectrum can be explained by degeneracy between modes with the same $N$.
+
+**Keywords:** Fabry-Perot cavity; Laguerre-Gaussian mode; Gouy phase; mode sorting; Airy transmission; radial parasitic mode

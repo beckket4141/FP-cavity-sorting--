@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python simulation_params.py)",
+      "PowerShell(python -c \"import fitz; print\\('PyMuPDF available'\\)\")",
+      "Bash(python read_pdf.py)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://api-docs.deepseek.com/zh-cn/guides/kv_cache\" -UseBasicParsing | Select-Object -ExpandProperty Content)"
+    ]
+  }
+}
